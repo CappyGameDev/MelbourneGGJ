@@ -136,7 +136,6 @@
     <None Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\3rdPartyAssets\Volumetric Lights\LICENSE.txt" />
     <None Include="Assets\Animations\DELETE ME.txt" />
-    <None Include="Assets\Scenes\DELETE ME.txt" />
     <None Include="Assets\Scripts\DELETE ME.txt" />
     <None Include="Assets\Shaders\DELETE ME.txt" />
     <None Include="Assets\Sounds\DELETE ME.txt" />
