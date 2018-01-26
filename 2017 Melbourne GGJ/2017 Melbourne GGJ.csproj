@@ -136,6 +136,7 @@
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Plugs\LineRenderManager.cs" />
     <Compile Include="Assets\Scripts\Plugs\PlugMovement.cs" />
+    <Compile Include="Assets\Scripts\Rotator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3rdPartyAssets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
@@ -148,6 +149,8 @@
     <None Include="Assets\3rdPartyAssets\Volumetric Lights\Shaders\VolumetricLight.shader" />
     <None Include="Assets\Animations\DELETE ME.txt" />
     <None Include="Assets\Shaders\DELETE ME.txt" />
+    <None Include="Assets\Shaders\Saturn.shader" />
+    <None Include="Assets\Shaders\Terrain Noise.shader" />
     <None Include="Assets\Sounds\DELETE ME.txt" />
     <None Include="Assets\Sprites\DELETE ME.txt" />
   </ItemGroup>
