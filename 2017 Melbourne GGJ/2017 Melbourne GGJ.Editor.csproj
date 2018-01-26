@@ -151,7 +151,6 @@
     <None Include="Assets\3rdPartyAssets\Volumetric Lights\Shaders\BlitAdd.shader" />
     <None Include="Assets\3rdPartyAssets\Volumetric Lights\Shaders\VolumetricLight.shader" />
     <None Include="Assets\Animations\DELETE ME.txt" />
-    <None Include="Assets\Scripts\DELETE ME.txt" />
     <None Include="Assets\Shaders\DELETE ME.txt" />
     <None Include="Assets\Sounds\DELETE ME.txt" />
     <None Include="Assets\Sprites\DELETE ME.txt" />
