@@ -139,13 +139,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\3rdPartyAssets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\3rdPartyAssets\Volumetric Lights\Editor\ImageEffects\TonemappingEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3rdPartyAssets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\3rdPartyAssets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\3rdPartyAssets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\3rdPartyAssets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\3rdPartyAssets\Volumetric Lights\LICENSE.txt" />
+    <None Include="Assets\3rdPartyAssets\Standard Assets\ImageEffects\Shaders\Tonemapper.shader" />
+    <None Include="Assets\3rdPartyAssets\Volumetric Lights\Shaders\BilateralBlur.shader" />
+    <None Include="Assets\3rdPartyAssets\Volumetric Lights\Shaders\BlitAdd.shader" />
+    <None Include="Assets\3rdPartyAssets\Volumetric Lights\Shaders\VolumetricLight.shader" />
     <None Include="Assets\Animations\DELETE ME.txt" />
     <None Include="Assets\Scripts\DELETE ME.txt" />
     <None Include="Assets\Shaders\DELETE ME.txt" />
