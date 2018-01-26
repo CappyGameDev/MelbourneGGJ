@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 390b723e3a7b375428d9a5f858213e62
+timeCreated: 1516997264
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Coral
+    100002: coral2
+    100004: group1
+    100006: pCube13
+    100008: pCube14
+    100010: pCube15
+    100012: pCube19
+    100014: pCube2
+    100016: pCube23
+    100018: pCube24
+    100020: pCube27
+    100022: pCube28
+    100024: pCube29
+    100026: pCube30
+    100028: pCube31
+    100030: pCube32
+    100032: pCube33
+    100034: pCube34
+    100036: pCube35
+    100038: pCube36
+    100040: pCube37
+    100042: pCube38
+    100044: pCube39
+    100046: pCube8
+    100048: //RootNode
+    100050: Reference_004_Scene_001
+    100052: rock
+    100054: rock1
+    100056: rock2
+    100058: rock3
+    100060: rock4
+    100062: rock4 1
+    100064: rock4 2
+    100066: rock4 3
+    100068: rock4 4
+    100070: rock4 5
+    100072: rock4 6
+    100074: rock4 7
+    100076: rock4 8
+    100078: rock4 9
+    100080: rock5
+    100082: rock5 1
+    100084: rock5 2
+    100086: rock5 3
+    100088: rock5 4
+    100090: rock5 5
+    100092: rock5 6
+    100094: rock5 7
+    100096: rock5 8
+    100098: rock5 9
+    100100: rock6
+    100102: rock6 1
+    100104: rock6 2
+    100106: rock6 3
+    100108: rock6 4
+    100110: rock6 5
+    100112: rock6 6
+    100114: rock6 7
+    100116: rock6 8
+    100118: rock6 9
+    100120: rock7
+    100122: rock8
+    100124: rock9
+    100126: RockCluster1
+    100128: RockCluster10
+    100130: RockCluster2
+    100132: RockCluster3
+    100134: RockCluster4
+    100136: RockCluster5
+    100138: RockCluster6
+    100140: RockCluster7
+    100142: RockCluster8
+    100144: RockCluster9
+    100146: rockvalley
+    100148: Sand
+    100150: shiprock
+    100152: sphericalrock
+    400000: Coral
+    400002: coral2
+    400004: group1
+    400006: pCube13
+    400008: pCube14
+    400010: pCube15
+    400012: pCube19
+    400014: pCube2
+    400016: pCube23
+    400018: pCube24
+    400020: pCube27
+    400022: pCube28
+    400024: pCube29
+    400026: pCube30
+    400028: pCube31
+    400030: pCube32
+    400032: pCube33
+    400034: pCube34
+    400036: pCube35
+    400038: pCube36
+    400040: pCube37
+    400042: pCube38
+    400044: pCube39
+    400046: pCube8
+    400048: Reference_004_Scene_001
+    400050: //RootNode
+    400052: rock
+    400054: rock1
+    400056: rock2
+    400058: rock3
+    400060: rock4
+    400062: rock4 1
+    400064: rock4 2
+    400066: rock4 3
+    400068: rock4 4
+    400070: rock4 5
+    400072: rock4 6
+    400074: rock4 7
+    400076: rock4 8
+    400078: rock4 9
+    400080: rock5
+    400082: rock5 1
+    400084: rock5 2
+    400086: rock5 3
+    400088: rock5 4
+    400090: rock5 5
+    400092: rock5 6
+    400094: rock5 7
+    400096: rock5 8
+    400098: rock5 9
+    400100: rock6
+    400102: rock6 1
+    400104: rock6 2
+    400106: rock6 3
+    400108: rock6 4
+    400110: rock6 5
+    400112: rock6 6
+    400114: rock6 7
+    400116: rock6 8
+    400118: rock6 9
+    400120: rock7
+    400122: rock8
+    400124: rock9
+    400126: RockCluster1
+    400128: RockCluster10
+    400130: RockCluster2
+    400132: RockCluster3
+    400134: RockCluster4
+    400136: RockCluster5
+    400138: RockCluster6
+    400140: RockCluster7
+    400142: RockCluster8
+    400144: RockCluster9
+    400146: rockvalley
+    400148: Sand
+    400150: shiprock
+    400152: sphericalrock
+    2300000: Coral
+    2300002: coral2
+    2300004: pCube13
+    2300006: pCube14
+    2300008: pCube15
+    2300010: pCube19
+    2300012: pCube2
+    2300014: pCube23
+    2300016: pCube24
+    2300018: pCube27
+    2300020: pCube28
+    2300022: pCube29
+    2300024: pCube30
+    2300026: pCube31
+    2300028: pCube32
+    2300030: pCube33
+    2300032: pCube34
+    2300034: pCube35
+    2300036: pCube36
+    2300038: pCube37
+    2300040: pCube38
+    2300042: pCube39
+    2300044: pCube8
+    2300046: Reference_004_Scene_001
+    2300048: rock
+    2300050: rock1
+    2300052: rock2
+    2300054: rock3
+    2300056: rock4
+    2300058: rock4 1
+    2300060: rock4 2
+    2300062: rock4 3
+    2300064: rock4 4
+    2300066: rock4 5
+    2300068: rock4 6
+    2300070: rock4 7
+    2300072: rock4 8
+    2300074: rock4 9
+    2300076: rock5
+    2300078: rock5 1
+    2300080: rock5 2
+    2300082: rock5 3
+    2300084: rock5 4
+    2300086: rock5 5
+    2300088: rock5 6
+    2300090: rock5 7
+    2300092: rock5 8
+    2300094: rock5 9
+    2300096: rock6
+    2300098: rock6 1
+    2300100: rock6 2
+    2300102: rock6 3
+    2300104: rock6 4
+    2300106: rock6 5
+    2300108: rock6 6
+    2300110: rock6 7
+    2300112: rock6 8
+    2300114: rock6 9
+    2300116: rock7
+    2300118: rock8
+    2300120: rock9
+    2300122: Sand
+    2300124: shiprock
+    2300126: sphericalrock
+    3300000: Coral
+    3300002: coral2
+    3300004: pCube13
+    3300006: pCube14
+    3300008: pCube15
+    3300010: pCube19
+    3300012: pCube2
+    3300014: pCube23
+    3300016: pCube24
+    3300018: pCube27
+    3300020: pCube28
+    3300022: pCube29
+    3300024: pCube30
+    3300026: pCube31
+    3300028: pCube32
+    3300030: pCube33
+    3300032: pCube34
+    3300034: pCube35
+    3300036: pCube36
+    3300038: pCube37
+    3300040: pCube38
+    3300042: pCube39
+    3300044: pCube8
+    3300046: Reference_004_Scene_001
+    3300048: rock
+    3300050: rock1
+    3300052: rock2
+    3300054: rock3
+    3300056: rock4
+    3300058: rock4 1
+    3300060: rock4 2
+    3300062: rock4 3
+    3300064: rock4 4
+    3300066: rock4 5
+    3300068: rock4 6
+    3300070: rock4 7
+    3300072: rock4 8
+    3300074: rock4 9
+    3300076: rock5
+    3300078: rock5 1
+    3300080: rock5 2
+    3300082: rock5 3
+    3300084: rock5 4
+    3300086: rock5 5
+    3300088: rock5 6
+    3300090: rock5 7
+    3300092: rock5 8
+    3300094: rock5 9
+    3300096: rock6
+    3300098: rock6 1
+    3300100: rock6 2
+    3300102: rock6 3
+    3300104: rock6 4
+    3300106: rock6 5
+    3300108: rock6 6
+    3300110: rock6 7
+    3300112: rock6 8
+    3300114: rock6 9
+    3300116: rock7
+    3300118: rock8
+    3300120: rock9
+    3300122: Sand
+    3300124: shiprock
+    3300126: sphericalrock
+    4300000: pCube2
+    4300002: pCube8
+    4300004: pCube13
+    4300006: pCube14
+    4300008: pCube15
+    4300010: pCube19
+    4300012: pCube23
+    4300014: pCube24
+    4300016: Sand
+    4300018: shiprock
+    4300020: sphericalrock
+    4300022: Coral
+    4300024: pCube27
+    4300026: pCube28
+    4300028: pCube29
+    4300030: pCube30
+    4300032: pCube31
+    4300034: pCube32
+    4300036: pCube33
+    4300038: pCube34
+    4300040: pCube35
+    4300042: pCube36
+    4300044: pCube37
+    4300046: pCube38
+    4300048: pCube39
+    4300050: rock
+    4300052: rock1
+    4300054: rock2
+    4300056: rock3
+    4300058: rock4
+    4300060: rock5
+    4300062: rock6
+    4300064: rock4
+    4300066: rock5
+    4300068: rock6
+    4300070: rock4
+    4300072: rock5
+    4300074: rock6
+    4300076: rock4
+    4300078: rock5
+    4300080: rock6
+    4300082: rock4
+    4300084: rock5
+    4300086: rock6
+    4300088: rock4
+    4300090: rock5
+    4300092: rock6
+    4300094: rock4
+    4300096: rock5
+    4300098: rock6
+    4300100: rock4
+    4300102: rock5
+    4300104: rock6
+    4300106: rock7
+    4300108: rock8
+    4300110: rock9
+    4300112: rock4
+    4300114: rock5
+    4300116: rock6
+    4300118: rock4
+    4300120: rock5
+    4300122: rock6
+    4300124: coral2
+    4300126: Reference_004_Scene_001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
