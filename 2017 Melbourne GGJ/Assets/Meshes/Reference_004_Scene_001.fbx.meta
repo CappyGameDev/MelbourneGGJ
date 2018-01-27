@@ -122,6 +122,11 @@ ModelImporter:
     100228: Rock_004_Enviroment_001_Stumpy1
     100230: Ravine2
     100232: Ravine3
+    100234: fish
+    100236: pineapple
+    100238: rockcluster
+    100240: rockclusters
+    100242: rocks
     400000: Coral
     400002: coral2
     400004: group1
@@ -239,6 +244,11 @@ ModelImporter:
     400228: Rock_004_Enviroment_001_Stumpy1
     400230: Ravine2
     400232: Ravine3
+    400234: fish
+    400236: pineapple
+    400238: rockcluster
+    400240: rockclusters
+    400242: rocks
     2300000: Coral
     2300002: coral2
     2300004: pCube13
@@ -339,6 +349,7 @@ ModelImporter:
     2300194: Rock_004_Enviroment_001_Stumpy1
     2300196: Ravine2
     2300198: Ravine3
+    2300200: pineapple
     3300000: Coral
     3300002: coral2
     3300004: pCube13
@@ -439,6 +450,7 @@ ModelImporter:
     3300194: Rock_004_Enviroment_001_Stumpy1
     3300196: Ravine2
     3300198: Ravine3
+    3300200: pineapple
     4300000: pCube2
     4300002: pCube8
     4300004: pCube13
@@ -539,6 +551,7 @@ ModelImporter:
     4300194: Rock_002_Enviroment_001_Pointy
     4300196: Ravine2
     4300198: Ravine3
+    4300200: pineapple
     9500000: //RootNode
   materials:
     importMaterials: 1
