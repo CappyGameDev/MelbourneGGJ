@@ -7,6 +7,7 @@ public class Holes : MonoBehaviour
 
     public bool isActive;
     public bool tempLightOn;
+    public string holeName;
 
     public Light l;
 
@@ -25,7 +26,7 @@ public class Holes : MonoBehaviour
     void Update()
     {
         if(!checkRays())
-        {
+        { 
             tempLightOn = false;
         }
 
@@ -44,7 +45,6 @@ public class Holes : MonoBehaviour
         GameObject otherCol = other.gameObject;
         if (otherCol.tag == "Plug")
         {
-            Debug.Log("Clamp");
             otherCol.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, otherCol.transform.position.z);
             isActive = true;
         }
