@@ -428,6 +428,7 @@
     <None Include="Assets\Animations\DELETE ME.txt" />
     <None Include="Assets\Shaders\BlackHole.shader" />
     <None Include="Assets\Shaders\DELETE ME.txt" />
+    <None Include="Assets\Shaders\Fish.shader" />
     <None Include="Assets\Shaders\Lava.shader" />
     <None Include="Assets\Shaders\Refraction.shader" />
     <None Include="Assets\Shaders\River.shader" />
