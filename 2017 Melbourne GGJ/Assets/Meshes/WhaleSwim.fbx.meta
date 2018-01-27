@@ -1,0 +1,454 @@
+fileFormatVersion: 2
+guid: 631ff682d71aedb469a446712d286bb6
+timeCreated: 1517054867
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Chest
+    100002: Coral
+    100004: coral
+    100006: Coral1
+    100008: coral13
+    100010: Coral2
+    100012: coral2
+    100014: coral3
+    100016: coral4
+    100018: coral8
+    100020: coral9
+    100022: coraldisks
+    100024: coraldisks11
+    100026: coraldisks4
+    100028: coraldisks5
+    100030: coraldisks7
+    100032: coraldisks8
+    100034: Fish
+    100036: fish
+    100038: Fish1
+    100040: Fish2
+    100042: jellyfish
+    100044: pineapple
+    100046: pineapple1
+    100048: Potato1
+    100050: Ravine2
+    100052: Ravine3
+    100054: Reference_004_Scene_001
+    100056: rock
+    100058: rock1
+    100060: rock2
+    100062: rock3
+    100064: rock4
+    100066: rock4 1
+    100068: rock4 2
+    100070: rock4 3
+    100072: rock4 4
+    100074: rock4 5
+    100076: rock4 6
+    100078: rock4 7
+    100080: rock5
+    100082: rock5 1
+    100084: rock5 2
+    100086: rock5 3
+    100088: rock5 4
+    100090: rock5 5
+    100092: rock5 6
+    100094: rock5 7
+    100096: rock6
+    100098: rock6 1
+    100100: rock6 2
+    100102: rock6 3
+    100104: rock6 4
+    100106: rock6 5
+    100108: rock6 6
+    100110: rock6 7
+    100112: rock7
+    100114: rock8
+    100116: rock9
+    100118: rockcluster
+    100120: RockCluster1
+    100122: RockCluster11
+    100124: RockCluster12
+    100126: RockCluster13
+    100128: RockCluster14
+    100130: RockCluster15
+    100132: RockCluster2
+    100134: RockCluster3
+    100136: RockCluster4
+    100138: RockCluster5
+    100140: RockCluster6
+    100142: RockCluster7
+    100144: RockCluster8
+    100146: rockclusters
+    100148: rocks
+    100150: Sand
+    100152: shiprock
+    100154: sphericalrock
+    100156: sphericalrock1
+    100158: Sub
+    100160: tunnel
+    100162: whale
+    100164: //RootNode
+    400000: Chest
+    400002: Coral
+    400004: coral
+    400006: Coral1
+    400008: coral13
+    400010: Coral2
+    400012: coral2
+    400014: coral3
+    400016: coral4
+    400018: coral8
+    400020: coral9
+    400022: coraldisks
+    400024: coraldisks11
+    400026: coraldisks4
+    400028: coraldisks5
+    400030: coraldisks7
+    400032: coraldisks8
+    400034: Fish
+    400036: fish
+    400038: Fish1
+    400040: Fish2
+    400042: jellyfish
+    400044: pineapple
+    400046: pineapple1
+    400048: Potato1
+    400050: Ravine2
+    400052: Ravine3
+    400054: Reference_004_Scene_001
+    400056: rock
+    400058: rock1
+    400060: rock2
+    400062: rock3
+    400064: rock4
+    400066: rock4 1
+    400068: rock4 2
+    400070: rock4 3
+    400072: rock4 4
+    400074: rock4 5
+    400076: rock4 6
+    400078: rock4 7
+    400080: rock5
+    400082: rock5 1
+    400084: rock5 2
+    400086: rock5 3
+    400088: rock5 4
+    400090: rock5 5
+    400092: rock5 6
+    400094: rock5 7
+    400096: rock6
+    400098: rock6 1
+    400100: rock6 2
+    400102: rock6 3
+    400104: rock6 4
+    400106: rock6 5
+    400108: rock6 6
+    400110: rock6 7
+    400112: rock7
+    400114: rock8
+    400116: rock9
+    400118: rockcluster
+    400120: RockCluster1
+    400122: RockCluster11
+    400124: RockCluster12
+    400126: RockCluster13
+    400128: RockCluster14
+    400130: RockCluster15
+    400132: RockCluster2
+    400134: RockCluster3
+    400136: RockCluster4
+    400138: RockCluster5
+    400140: RockCluster6
+    400142: RockCluster7
+    400144: RockCluster8
+    400146: rockclusters
+    400148: rocks
+    400150: Sand
+    400152: shiprock
+    400154: sphericalrock
+    400156: sphericalrock1
+    400158: Sub
+    400160: tunnel
+    400162: whale
+    400164: //RootNode
+    2300000: Chest
+    2300002: Coral
+    2300004: Coral1
+    2300006: coral13
+    2300008: Coral2
+    2300010: coral2
+    2300012: coral3
+    2300014: coral4
+    2300016: coral8
+    2300018: coral9
+    2300020: coraldisks11
+    2300022: coraldisks4
+    2300024: coraldisks5
+    2300026: coraldisks7
+    2300028: coraldisks8
+    2300030: Fish
+    2300032: Fish1
+    2300034: Fish2
+    2300036: jellyfish
+    2300038: pineapple
+    2300040: pineapple1
+    2300042: Potato1
+    2300044: Ravine2
+    2300046: Ravine3
+    2300048: Reference_004_Scene_001
+    2300050: rock
+    2300052: rock1
+    2300054: rock2
+    2300056: rock3
+    2300058: rock4
+    2300060: rock4 1
+    2300062: rock4 2
+    2300064: rock4 3
+    2300066: rock4 4
+    2300068: rock4 5
+    2300070: rock4 6
+    2300072: rock4 7
+    2300074: rock5
+    2300076: rock5 1
+    2300078: rock5 2
+    2300080: rock5 3
+    2300082: rock5 4
+    2300084: rock5 5
+    2300086: rock5 6
+    2300088: rock5 7
+    2300090: rock6
+    2300092: rock6 1
+    2300094: rock6 2
+    2300096: rock6 3
+    2300098: rock6 4
+    2300100: rock6 5
+    2300102: rock6 6
+    2300104: rock6 7
+    2300106: rock7
+    2300108: rock8
+    2300110: rock9
+    2300112: RockCluster11
+    2300114: RockCluster12
+    2300116: RockCluster13
+    2300118: RockCluster14
+    2300120: RockCluster15
+    2300122: Sand
+    2300124: shiprock
+    2300126: sphericalrock
+    2300128: sphericalrock1
+    2300130: Sub
+    2300132: tunnel
+    2300134: whale
+    3300000: Chest
+    3300002: Coral
+    3300004: Coral1
+    3300006: coral13
+    3300008: Coral2
+    3300010: coral2
+    3300012: coral3
+    3300014: coral4
+    3300016: coral8
+    3300018: coral9
+    3300020: coraldisks11
+    3300022: coraldisks4
+    3300024: coraldisks5
+    3300026: coraldisks7
+    3300028: coraldisks8
+    3300030: Fish
+    3300032: Fish1
+    3300034: Fish2
+    3300036: jellyfish
+    3300038: pineapple
+    3300040: pineapple1
+    3300042: Potato1
+    3300044: Ravine2
+    3300046: Ravine3
+    3300048: Reference_004_Scene_001
+    3300050: rock
+    3300052: rock1
+    3300054: rock2
+    3300056: rock3
+    3300058: rock4
+    3300060: rock4 1
+    3300062: rock4 2
+    3300064: rock4 3
+    3300066: rock4 4
+    3300068: rock4 5
+    3300070: rock4 6
+    3300072: rock4 7
+    3300074: rock5
+    3300076: rock5 1
+    3300078: rock5 2
+    3300080: rock5 3
+    3300082: rock5 4
+    3300084: rock5 5
+    3300086: rock5 6
+    3300088: rock5 7
+    3300090: rock6
+    3300092: rock6 1
+    3300094: rock6 2
+    3300096: rock6 3
+    3300098: rock6 4
+    3300100: rock6 5
+    3300102: rock6 6
+    3300104: rock6 7
+    3300106: rock7
+    3300108: rock8
+    3300110: rock9
+    3300112: RockCluster11
+    3300114: RockCluster12
+    3300116: RockCluster13
+    3300118: RockCluster14
+    3300120: RockCluster15
+    3300122: Sand
+    3300124: shiprock
+    3300126: sphericalrock
+    3300128: sphericalrock1
+    3300130: Sub
+    3300132: tunnel
+    3300134: whale
+    4300000: Sand
+    4300002: shiprock
+    4300004: sphericalrock
+    4300006: Coral
+    4300008: tunnel
+    4300010: Reference_004_Scene_001
+    4300012: coral2
+    4300014: coral3
+    4300016: coral4
+    4300018: coral8
+    4300020: coral9
+    4300022: coral13
+    4300024: Sub
+    4300026: whale
+    4300028: Coral1
+    4300030: Coral2
+    4300032: sphericalrock1
+    4300034: coraldisks4
+    4300036: coraldisks5
+    4300038: coraldisks7
+    4300040: coraldisks8
+    4300042: coraldisks11
+    4300044: pineapple
+    4300046: Ravine2
+    4300048: Ravine3
+    4300050: rock
+    4300052: rock1
+    4300054: rock2
+    4300056: rock3
+    4300058: RockCluster15
+    4300060: RockCluster14
+    4300062: RockCluster13
+    4300064: RockCluster12
+    4300066: RockCluster11
+    4300068: rock4
+    4300070: rock5
+    4300072: rock6
+    4300074: rock4
+    4300076: rock5
+    4300078: rock6
+    4300080: rock4
+    4300082: rock5
+    4300084: rock6
+    4300086: rock4
+    4300088: rock5
+    4300090: rock6
+    4300092: rock4
+    4300094: rock5
+    4300096: rock6
+    4300098: rock4
+    4300100: rock5
+    4300102: rock6
+    4300104: rock4
+    4300106: rock5
+    4300108: rock6
+    4300110: rock4
+    4300112: rock5
+    4300114: rock6
+    4300116: rock7
+    4300118: rock8
+    4300120: rock9
+    4300122: Fish
+    4300124: Fish1
+    4300126: Fish2
+    4300128: pineapple1
+    4300130: Chest
+    4300132: Potato1
+    4300134: jellyfish
+    7400000: Swim
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
