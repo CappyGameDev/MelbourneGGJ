@@ -127,6 +127,8 @@ ModelImporter:
     100238: rockcluster
     100240: rockclusters
     100242: rocks
+    100244: Chest
+    100246: pineapple1
     400000: Coral
     400002: coral2
     400004: group1
@@ -249,6 +251,8 @@ ModelImporter:
     400238: rockcluster
     400240: rockclusters
     400242: rocks
+    400244: Chest
+    400246: pineapple1
     2300000: Coral
     2300002: coral2
     2300004: pCube13
@@ -350,6 +354,8 @@ ModelImporter:
     2300196: Ravine2
     2300198: Ravine3
     2300200: pineapple
+    2300202: Chest
+    2300204: pineapple1
     3300000: Coral
     3300002: coral2
     3300004: pCube13
@@ -451,6 +457,8 @@ ModelImporter:
     3300196: Ravine2
     3300198: Ravine3
     3300200: pineapple
+    3300202: Chest
+    3300204: pineapple1
     4300000: pCube2
     4300002: pCube8
     4300004: pCube13
@@ -552,6 +560,8 @@ ModelImporter:
     4300196: Ravine2
     4300198: Ravine3
     4300200: pineapple
+    4300202: pineapple1
+    4300204: Chest
     9500000: //RootNode
   materials:
     importMaterials: 1

@@ -51,22 +51,22 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1232436507552970}
-  m_LocalRotation: {x: -0.26867712, y: 0.183411, z: -0, w: 0.94560724}
+  m_LocalRotation: {x: -0.31343722, y: 0.19458525, z: -0.03175772, w: 0.9289161}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 69.848785, y: 69.84882, z: 69.84882}
   m_Children: []
   m_Father: {fileID: 4969123918477404}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -30.539001, y: 23.749, z: -6.571}
+  m_LocalEulerAnglesHint: {x: -34.747, y: 27.658, z: -12.724001}
 --- !u!4 &4969123918477404
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1272052462689824}
-  m_LocalRotation: {x: 0.92388034, y: -0, z: -0, w: -0.38268143}
-  m_LocalPosition: {x: 63, y: -189.36276, z: 88.10629}
-  m_LocalScale: {x: 79.477844, y: 79.477806, z: 79.477806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 79.477844, y: 79.477806, z: 79.4778}
   m_Children:
   - {fileID: 4822717782278168}
   m_Father: {fileID: 0}
@@ -131,7 +131,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1552534209
+  randomSeed: 87375211
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3357,7 +3357,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 0.9
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -3398,7 +3398,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 816740149
+  randomSeed: -1949997896
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5831,7 +5831,7 @@ ParticleSystem:
     radiusScale: 1
   SubModule:
     serializedVersion: 2
-    enabled: 1
+    enabled: 0
     subEmitters:
     - emitter: {fileID: 198071040018424514}
       type: 0
