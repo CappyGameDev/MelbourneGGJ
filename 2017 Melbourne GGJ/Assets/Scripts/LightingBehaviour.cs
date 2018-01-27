@@ -8,12 +8,12 @@ public class LightingBehaviour : MonoBehaviour
     public float flashTimer;
     bool flashing = true;
     private Light flashLight;
-    public float minFlashTime;
-    public float maxFlashTime;
+    public Light switchLight;
 
     void Awake()
     {
         flashLight = GetComponent<Light>();
+        switchLight = GetComponent<Light>();
     }
 
     // Use this for initialization
@@ -30,6 +30,7 @@ public class LightingBehaviour : MonoBehaviour
         {
             flashing = false;
             flashLight.enabled = true;
+            switchLight.intensity = + 0.5f;
         }
     }
 
@@ -37,7 +38,7 @@ public class LightingBehaviour : MonoBehaviour
     {
         while (flashing)
         {
-            yield return new WaitForSeconds(Random.Range(minFlashTime, maxFlashTime));
+            yield return new WaitForSeconds(Random.Range(0.15f, 0.5f));
             flashLight.enabled = !flashLight.enabled;
 
         }
