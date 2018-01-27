@@ -180,9 +180,12 @@
     <Compile Include="Assets\3rdPartyAssets\Volumetric Lights\Scripts\VolumetricLightRenderer.cs" />
     <Compile Include="Assets\Scripts\Holes\Holes.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\LightFade.cs" />
     <Compile Include="Assets\Scripts\Plugs\LineRenderManager.cs" />
+    <Compile Include="Assets\Scripts\Plugs\PlugLineRendererManager.cs" />
     <Compile Include="Assets\Scripts\Plugs\PlugMovement.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
+    <Compile Include="Assets\Scripts\UI\TextScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3rdPartyAssets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />

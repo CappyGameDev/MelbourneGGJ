@@ -82,6 +82,46 @@ ModelImporter:
     100148: Sand
     100150: shiprock
     100152: sphericalrock
+    100154: coral
+    100156: Coral1
+    100158: coral13
+    100160: Coral2
+    100162: coral3
+    100164: coral4
+    100166: coral8
+    100168: coral9
+    100170: coraldisks
+    100172: coraldisks11
+    100174: coraldisks4
+    100176: coraldisks5
+    100178: coraldisks7
+    100180: coraldisks8
+    100182: Fish
+    100184: Fish1
+    100186: Fish2
+    100188: group2
+    100190: group3
+    100192: pCube40
+    100194: pCube41
+    100196: pCube42
+    100198: pCube43
+    100200: pSphere2
+    100202: RockCluster11
+    100204: RockCluster12
+    100206: RockCluster13
+    100208: RockCluster14
+    100210: RockCluster15
+    100212: sphericalrock1
+    100214: Sub
+    100216: tunnel
+    100218: whale
+    100220: Rock_001_Enviroment_001_Rocky
+    100222: Rock_002_Enviroment_001_Pointy
+    100224: Rock_003_Enviroment_001_Blocky
+    100226: Rock_004_Enviroment_001_Stumpy
+    100228: Rock_004_Enviroment_001_Stumpy1
+    100230: Ravine2
+    100232: Ravine3
     400000: Coral
     400002: coral2
     400004: group1
@@ -159,6 +199,46 @@ ModelImporter:
     400148: Sand
     400150: shiprock
     400152: sphericalrock
+    400154: coral
+    400156: Coral1
+    400158: coral13
+    400160: Coral2
+    400162: coral3
+    400164: coral4
+    400166: coral8
+    400168: coral9
+    400170: coraldisks
+    400172: coraldisks11
+    400174: coraldisks4
+    400176: coraldisks5
+    400178: coraldisks7
+    400180: coraldisks8
+    400182: Fish
+    400184: Fish1
+    400186: Fish2
+    400188: group2
+    400190: group3
+    400192: pCube40
+    400194: pCube41
+    400196: pCube42
+    400198: pCube43
+    400200: pSphere2
+    400202: RockCluster11
+    400204: RockCluster12
+    400206: RockCluster13
+    400208: RockCluster14
+    400210: RockCluster15
+    400212: sphericalrock1
+    400214: Sub
+    400216: tunnel
+    400218: whale
+    400220: Rock_001_Enviroment_001_Rocky
+    400222: Rock_002_Enviroment_001_Pointy
+    400224: Rock_003_Enviroment_001_Blocky
+    400226: Rock_004_Enviroment_001_Stumpy
+    400228: Rock_004_Enviroment_001_Stumpy1
+    400230: Ravine2
+    400232: Ravine3
     2300000: Coral
     2300002: coral2
     2300004: pCube13
@@ -223,6 +303,42 @@ ModelImporter:
     2300122: Sand
     2300124: shiprock
     2300126: sphericalrock
+    2300128: Coral1
+    2300130: coral13
+    2300132: Coral2
+    2300134: coral3
+    2300136: coral4
+    2300138: coral8
+    2300140: coral9
+    2300142: coraldisks11
+    2300144: coraldisks4
+    2300146: coraldisks5
+    2300148: coraldisks7
+    2300150: coraldisks8
+    2300152: Fish
+    2300154: Fish1
+    2300156: Fish2
+    2300158: pCube40
+    2300160: pCube41
+    2300162: pCube42
+    2300164: pCube43
+    2300166: pSphere2
+    2300168: RockCluster11
+    2300170: RockCluster12
+    2300172: RockCluster13
+    2300174: RockCluster14
+    2300176: RockCluster15
+    2300178: sphericalrock1
+    2300180: Sub
+    2300182: tunnel
+    2300184: whale
+    2300186: Rock_001_Enviroment_001_Rocky
+    2300188: Rock_002_Enviroment_001_Pointy
+    2300190: Rock_003_Enviroment_001_Blocky
+    2300192: Rock_004_Enviroment_001_Stumpy
+    2300194: Rock_004_Enviroment_001_Stumpy1
+    2300196: Ravine2
+    2300198: Ravine3
     3300000: Coral
     3300002: coral2
     3300004: pCube13
@@ -287,6 +403,42 @@ ModelImporter:
     3300122: Sand
     3300124: shiprock
     3300126: sphericalrock
+    3300128: Coral1
+    3300130: coral13
+    3300132: Coral2
+    3300134: coral3
+    3300136: coral4
+    3300138: coral8
+    3300140: coral9
+    3300142: coraldisks11
+    3300144: coraldisks4
+    3300146: coraldisks5
+    3300148: coraldisks7
+    3300150: coraldisks8
+    3300152: Fish
+    3300154: Fish1
+    3300156: Fish2
+    3300158: pCube40
+    3300160: pCube41
+    3300162: pCube42
+    3300164: pCube43
+    3300166: pSphere2
+    3300168: RockCluster11
+    3300170: RockCluster12
+    3300172: RockCluster13
+    3300174: RockCluster14
+    3300176: RockCluster15
+    3300178: sphericalrock1
+    3300180: Sub
+    3300182: tunnel
+    3300184: whale
+    3300186: Rock_001_Enviroment_001_Rocky
+    3300188: Rock_002_Enviroment_001_Pointy
+    3300190: Rock_003_Enviroment_001_Blocky
+    3300192: Rock_004_Enviroment_001_Stumpy
+    3300194: Rock_004_Enviroment_001_Stumpy1
+    3300196: Ravine2
+    3300198: Ravine3
     4300000: pCube2
     4300002: pCube8
     4300004: pCube13
@@ -351,6 +503,42 @@ ModelImporter:
     4300122: rock6
     4300124: coral2
     4300126: Reference_004_Scene_001
+    4300128: tunnel
+    4300130: coral3
+    4300132: coral4
+    4300134: coral8
+    4300136: coral9
+    4300138: coral13
+    4300140: Fish
+    4300142: Fish1
+    4300144: Fish2
+    4300146: Sub
+    4300148: pCube40
+    4300150: whale
+    4300152: pCube41
+    4300154: pCube42
+    4300156: pCube43
+    4300158: Coral1
+    4300160: Coral2
+    4300162: sphericalrock1
+    4300164: coraldisks4
+    4300166: coraldisks5
+    4300168: coraldisks7
+    4300170: coraldisks8
+    4300172: coraldisks11
+    4300174: pSphere2
+    4300176: RockCluster11
+    4300178: RockCluster12
+    4300180: RockCluster13
+    4300182: RockCluster14
+    4300184: RockCluster15
+    4300186: Rock_001_Enviroment_001_Rocky
+    4300188: Rock_003_Enviroment_001_Blocky
+    4300190: Rock_004_Enviroment_001_Stumpy
+    4300192: Rock_004_Enviroment_001_Stumpy1
+    4300194: Rock_002_Enviroment_001_Pointy
+    4300196: Ravine2
+    4300198: Ravine3
     9500000: //RootNode
   materials:
     importMaterials: 1
