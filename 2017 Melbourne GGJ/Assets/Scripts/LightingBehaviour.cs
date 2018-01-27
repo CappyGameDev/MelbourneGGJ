@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class LightingBehaviour : MonoBehaviour
 {
-
-    public bool flashing;
+    [Tooltip("How long you want the light to flicker(in seconds)")]
     public float flashTimer;
-    public Light flashLight;
+    bool flashing = true;
+    private Light flashLight;
 
     void Awake()
     {
