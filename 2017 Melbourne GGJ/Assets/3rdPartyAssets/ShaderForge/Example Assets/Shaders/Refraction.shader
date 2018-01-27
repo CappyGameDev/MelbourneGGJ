@@ -1,20 +1,19 @@
 // Shader created with Shader Forge v1.38 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:False,mssp:True,bkdf:False,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:0,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:2,wrdp:False,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:False,aust:False,igpj:False,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:0,x:34414,y:32442,varname:node_0,prsc:2|diff-5610-OUT,spec-75-OUT,gloss-76-OUT,normal-215-OUT,transm-29-OUT,lwrap-29-OUT,alpha-22-OUT,refract-14-OUT;n:type:ShaderForge.SFN_Slider,id:13,x:33580,y:32752,ptovrint:False,ptlb:Refraction Intensity,ptin:_RefractionIntensity,varname:_RefractionIntensity,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.1,max:1;n:type:ShaderForge.SFN_Multiply,id:14,x:34145,y:32724,varname:node_14,prsc:2|A-16-OUT,B-220-OUT;n:type:ShaderForge.SFN_ComponentMask,id:16,x:33975,y:32651,varname:node_16,prsc:2,cc1:0,cc2:1,cc3:-1,cc4:-1|IN-25-RGB;n:type:ShaderForge.SFN_Vector1,id:22,x:34145,y:32651,varname:node_22,prsc:2,v1:0.3;n:type:ShaderForge.SFN_Tex2d,id:25,x:33737,y:32566,ptovrint:False,ptlb:Refraction,ptin:_Refraction,varname:_Refraction,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:bbab0a6f7bae9cf42bf057d8ee2755f6,ntxv:3,isnm:True|UVIN-27-OUT;n:type:ShaderForge.SFN_TexCoord,id:26,x:33379,y:32505,varname:node_26,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_Multiply,id:27,x:33550,y:32566,varname:node_27,prsc:2|A-26-UVOUT,B-28-OUT;n:type:ShaderForge.SFN_Vector1,id:28,x:33379,y:32662,varname:node_28,prsc:2,v1:1;n:type:ShaderForge.SFN_Vector1,id:29,x:34145,y:32577,varname:node_29,prsc:2,v1:1;n:type:ShaderForge.SFN_Vector1,id:75,x:34145,y:32430,varname:node_75,prsc:2,v1:0;n:type:ShaderForge.SFN_Vector1,id:76,x:34145,y:32486,varname:node_76,prsc:2,v1:0.8;n:type:ShaderForge.SFN_Lerp,id:215,x:33975,y:32524,varname:node_215,prsc:2|A-216-OUT,B-25-RGB,T-13-OUT;n:type:ShaderForge.SFN_Vector3,id:216,x:33737,y:32445,varname:node_216,prsc:2,v1:0,v2:0,v3:1;n:type:ShaderForge.SFN_Multiply,id:220,x:33975,y:32803,varname:node_220,prsc:2|A-13-OUT,B-221-OUT;n:type:ShaderForge.SFN_Vector1,id:221,x:33737,y:32831,varname:node_221,prsc:2,v1:0.2;n:type:ShaderForge.SFN_Vector1,id:5610,x:34145,y:32366,varname:node_5610,prsc:2,v1:0.2;proporder:13-25;pass:END;sub:END;*/
+/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:2,spmd:1,trmd:0,grmd:0,uamb:False,mssp:True,bkdf:False,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:0,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:2,wrdp:False,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:False,aust:False,igpj:False,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:0,x:34414,y:32442,varname:node_0,prsc:2|diff-8770-RGB,normal-25-RGB;n:type:ShaderForge.SFN_Slider,id:13,x:33777,y:32844,ptovrint:False,ptlb:Refraction Intensity,ptin:_RefractionIntensity,varname:_RefractionIntensity,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.1,max:1;n:type:ShaderForge.SFN_Multiply,id:14,x:34145,y:32724,varname:node_14,prsc:2|A-16-OUT,B-13-OUT;n:type:ShaderForge.SFN_ComponentMask,id:16,x:33934,y:32651,varname:node_16,prsc:2,cc1:0,cc2:-1,cc3:-1,cc4:-1|IN-25-RGB;n:type:ShaderForge.SFN_Tex2d,id:25,x:32878,y:32452,varname:_Refraction,prsc:2,tex:0443e6ea5359df344a678e84850ed402,ntxv:3,isnm:True|UVIN-5993-UVOUT,TEX-2691-TEX;n:type:ShaderForge.SFN_TexCoord,id:4865,x:32449,y:32541,varname:node_4865,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_Panner,id:5993,x:32698,y:32463,varname:node_5993,prsc:2,spu:-0.2,spv:0.1|UVIN-4865-UVOUT;n:type:ShaderForge.SFN_Tex2dAsset,id:2691,x:32698,y:32240,ptovrint:False,ptlb:Refraction,ptin:_Refraction,varname:node_2691,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:0443e6ea5359df344a678e84850ed402,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:5011,x:32878,y:32622,varname:node_5011,prsc:2,tex:0443e6ea5359df344a678e84850ed402,ntxv:0,isnm:False|UVIN-1451-UVOUT,TEX-2691-TEX;n:type:ShaderForge.SFN_Blend,id:6430,x:33188,y:32549,varname:node_6430,prsc:2,blmd:10,clmp:True|SRC-25-RGB,DST-5011-RGB;n:type:ShaderForge.SFN_Panner,id:1451,x:32698,y:32622,varname:node_1451,prsc:2,spu:0.3,spv:-0.1|UVIN-4865-UVOUT;n:type:ShaderForge.SFN_Vector1,id:4304,x:34173,y:32663,varname:node_4304,prsc:2,v1:1;n:type:ShaderForge.SFN_Color,id:8770,x:34021,y:32298,ptovrint:False,ptlb:colour,ptin:_colour,varname:node_8770,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:1,c3:1,c4:1;proporder:13-2691-8770;pass:END;sub:END;*/
 
 Shader "Shader Forge/Examples/Refraction" {
     Properties {
         _RefractionIntensity ("Refraction Intensity", Range(0, 1)) = 0.1
         _Refraction ("Refraction", 2D) = "bump" {}
-        [HideInInspector]_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
+        _colour ("colour", Color) = (1,1,1,1)
     }
     SubShader {
         Tags {
             "Queue"="Transparent"
             "RenderType"="Transparent"
         }
-        GrabPass{ }
         Pass {
             Name "FORWARD"
             Tags {
@@ -36,9 +35,8 @@ Shader "Shader Forge/Examples/Refraction" {
             #pragma multi_compile_fwdbase_fullshadows
             #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 
             #pragma target 3.0
-            uniform sampler2D _GrabTexture;
-            uniform float _RefractionIntensity;
             uniform sampler2D _Refraction; uniform float4 _Refraction_ST;
+            uniform float4 _colour;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -52,8 +50,7 @@ Shader "Shader Forge/Examples/Refraction" {
                 float3 normalDir : TEXCOORD2;
                 float3 tangentDir : TEXCOORD3;
                 float3 bitangentDir : TEXCOORD4;
-                float4 projPos : TEXCOORD5;
-                LIGHTING_COORDS(6,7)
+                LIGHTING_COORDS(5,6)
             };
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
@@ -64,8 +61,6 @@ Shader "Shader Forge/Examples/Refraction" {
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = UnityObjectToClipPos( v.vertex );
-                o.projPos = ComputeScreenPos (o.pos);
-                COMPUTE_EYEDEPTH(o.projPos.z);
                 TRANSFER_VERTEX_TO_FRAGMENT(o)
                 return o;
             }
@@ -74,26 +69,16 @@ Shader "Shader Forge/Examples/Refraction" {
                 float faceSign = ( facing >= 0 ? 1 : -1 );
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float2 node_27 = (i.uv0*1.0);
-                float3 _Refraction_var = UnpackNormal(tex2D(_Refraction,TRANSFORM_TEX(node_27, _Refraction)));
-                float3 normalLocal = lerp(float3(0,0,1),_Refraction_var.rgb,_RefractionIntensity);
+                float4 node_1493 = _Time;
+                float2 node_5993 = (i.uv0+node_1493.g*float2(-0.2,0.1));
+                float3 _Refraction = UnpackNormal(tex2D(_Refraction,TRANSFORM_TEX(node_5993, _Refraction)));
+                float3 normalLocal = _Refraction.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
-                float3 viewReflectDirection = reflect( -viewDirection, normalDirection );
-                float2 sceneUVs = (i.projPos.xy / i.projPos.w) + (_Refraction_var.rgb.rg*(_RefractionIntensity*0.2));
-                float4 sceneColor = tex2D(_GrabTexture, sceneUVs);
                 float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
                 float3 lightColor = _LightColor0.rgb;
-                float3 halfDirection = normalize(viewDirection+lightDirection);
 ////// Lighting:
                 float attenuation = LIGHT_ATTENUATION(i);
                 float3 attenColor = attenuation * _LightColor0.xyz;
-                float Pi = 3.141592654;
-                float InvPi = 0.31830988618;
-///////// Gloss:
-                float gloss = 0.8;
-                float perceptualRoughness = 1.0 - 0.8;
-                float roughness = perceptualRoughness * perceptualRoughness;
-                float specPow = exp2( gloss * 10.0 + 1.0 );
 /////// GI Data:
                 UnityLight light;
                 #ifdef LIGHTMAP_OFF
@@ -110,75 +95,20 @@ Shader "Shader Forge/Examples/Refraction" {
                 d.worldPos = i.posWorld.xyz;
                 d.worldViewDir = viewDirection;
                 d.atten = attenuation;
-                #if UNITY_SPECCUBE_BLENDING || UNITY_SPECCUBE_BOX_PROJECTION
-                    d.boxMin[0] = unity_SpecCube0_BoxMin;
-                    d.boxMin[1] = unity_SpecCube1_BoxMin;
-                #endif
-                #if UNITY_SPECCUBE_BOX_PROJECTION
-                    d.boxMax[0] = unity_SpecCube0_BoxMax;
-                    d.boxMax[1] = unity_SpecCube1_BoxMax;
-                    d.probePosition[0] = unity_SpecCube0_ProbePosition;
-                    d.probePosition[1] = unity_SpecCube1_ProbePosition;
-                #endif
-                d.probeHDR[0] = unity_SpecCube0_HDR;
-                d.probeHDR[1] = unity_SpecCube1_HDR;
                 Unity_GlossyEnvironmentData ugls_en_data;
-                ugls_en_data.roughness = 1.0 - gloss;
+                ugls_en_data.roughness = 1.0 - 0;
                 ugls_en_data.reflUVW = viewReflectDirection;
                 UnityGI gi = UnityGlobalIllumination(d, 1, normalDirection, ugls_en_data );
                 lightDirection = gi.light.dir;
                 lightColor = gi.light.color;
-////// Specular:
-                float NdotL = saturate(dot( normalDirection, lightDirection ));
-                float LdotH = saturate(dot(lightDirection, halfDirection));
-                float3 specularColor = 0.0;
-                float specularMonochrome;
-                float node_5610 = 0.2;
-                float3 diffuseColor = float3(node_5610,node_5610,node_5610); // Need this for specular when using metallic
-                diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
-                specularMonochrome = 1.0-specularMonochrome;
-                float NdotV = abs(dot( normalDirection, viewDirection ));
-                float NdotH = saturate(dot( normalDirection, halfDirection ));
-                float VdotH = saturate(dot( viewDirection, halfDirection ));
-                float visTerm = SmithJointGGXVisibilityTerm( NdotL, NdotV, roughness );
-                float normTerm = GGXTerm(NdotH, roughness);
-                float specularPBL = (visTerm*normTerm) * UNITY_PI;
-                #ifdef UNITY_COLORSPACE_GAMMA
-                    specularPBL = sqrt(max(1e-4h, specularPBL));
-                #endif
-                specularPBL = max(0, specularPBL * NdotL);
-                #if defined(_SPECULARHIGHLIGHTS_OFF)
-                    specularPBL = 0.0;
-                #endif
-                half surfaceReduction;
-                #ifdef UNITY_COLORSPACE_GAMMA
-                    surfaceReduction = 1.0-0.28*roughness*perceptualRoughness;
-                #else
-                    surfaceReduction = 1.0/(roughness*roughness + 1.0);
-                #endif
-                specularPBL *= any(specularColor) ? 1.0 : 0.0;
-                float3 directSpecular = attenColor*specularPBL*FresnelTerm(specularColor, LdotH);
-                half grazingTerm = saturate( gloss + specularMonochrome );
-                float3 indirectSpecular = (gi.indirect.specular);
-                indirectSpecular *= FresnelLerp (specularColor, grazingTerm, NdotV);
-                indirectSpecular *= surfaceReduction;
-                float3 specular = (directSpecular + indirectSpecular);
 /////// Diffuse:
-                NdotL = dot( normalDirection, lightDirection );
-                float node_29 = 1.0;
-                float3 w = float3(node_29,node_29,node_29)*0.5; // Light wrapping
-                float3 NdotLWrap = NdotL * ( 1.0 - w );
-                float3 forwardLight = max(float3(0.0,0.0,0.0), NdotLWrap + w );
-                float3 backLight = max(float3(0.0,0.0,0.0), -NdotLWrap + w ) * float3(node_29,node_29,node_29);
-                NdotL = max(0.0,dot( normalDirection, lightDirection ));
-                half fd90 = 0.5 + 2 * LdotH * LdotH * (1-gloss);
-                float nlPow5 = Pow5(1-NdotLWrap);
-                float nvPow5 = Pow5(1-NdotV);
-                float3 directDiffuse = ((forwardLight+backLight) + ((1 +(fd90 - 1)*nlPow5) * (1 + (fd90 - 1)*nvPow5) * NdotL)) * attenColor;
+                float NdotL = max(0.0,dot( normalDirection, lightDirection ));
+                float3 directDiffuse = max( 0.0, NdotL) * attenColor;
+                float3 diffuseColor = _colour.rgb;
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
-                float3 finalColor = diffuse + specular;
-                return fixed4(lerp(sceneColor.rgb, finalColor,0.3),1);
+                float3 finalColor = diffuse;
+                return fixed4(finalColor,1);
             }
             ENDCG
         }
@@ -203,9 +133,8 @@ Shader "Shader Forge/Examples/Refraction" {
             #pragma multi_compile_fwdadd_fullshadows
             #pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 
             #pragma target 3.0
-            uniform sampler2D _GrabTexture;
-            uniform float _RefractionIntensity;
             uniform sampler2D _Refraction; uniform float4 _Refraction_ST;
+            uniform float4 _colour;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -219,8 +148,7 @@ Shader "Shader Forge/Examples/Refraction" {
                 float3 normalDir : TEXCOORD2;
                 float3 tangentDir : TEXCOORD3;
                 float3 bitangentDir : TEXCOORD4;
-                float4 projPos : TEXCOORD5;
-                LIGHTING_COORDS(6,7)
+                LIGHTING_COORDS(5,6)
             };
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
@@ -231,8 +159,6 @@ Shader "Shader Forge/Examples/Refraction" {
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = UnityObjectToClipPos( v.vertex );
-                o.projPos = ComputeScreenPos (o.pos);
-                COMPUTE_EYEDEPTH(o.projPos.z);
                 TRANSFER_VERTEX_TO_FRAGMENT(o)
                 return o;
             }
@@ -241,66 +167,24 @@ Shader "Shader Forge/Examples/Refraction" {
                 float faceSign = ( facing >= 0 ? 1 : -1 );
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float2 node_27 = (i.uv0*1.0);
-                float3 _Refraction_var = UnpackNormal(tex2D(_Refraction,TRANSFORM_TEX(node_27, _Refraction)));
-                float3 normalLocal = lerp(float3(0,0,1),_Refraction_var.rgb,_RefractionIntensity);
+                float4 node_6991 = _Time;
+                float2 node_5993 = (i.uv0+node_6991.g*float2(-0.2,0.1));
+                float3 _Refraction = UnpackNormal(tex2D(_Refraction,TRANSFORM_TEX(node_5993, _Refraction)));
+                float3 normalLocal = _Refraction.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
-                float2 sceneUVs = (i.projPos.xy / i.projPos.w) + (_Refraction_var.rgb.rg*(_RefractionIntensity*0.2));
-                float4 sceneColor = tex2D(_GrabTexture, sceneUVs);
                 float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz,_WorldSpaceLightPos0.w));
                 float3 lightColor = _LightColor0.rgb;
-                float3 halfDirection = normalize(viewDirection+lightDirection);
 ////// Lighting:
                 float attenuation = LIGHT_ATTENUATION(i);
                 float3 attenColor = attenuation * _LightColor0.xyz;
-                float Pi = 3.141592654;
-                float InvPi = 0.31830988618;
-///////// Gloss:
-                float gloss = 0.8;
-                float perceptualRoughness = 1.0 - 0.8;
-                float roughness = perceptualRoughness * perceptualRoughness;
-                float specPow = exp2( gloss * 10.0 + 1.0 );
-////// Specular:
-                float NdotL = saturate(dot( normalDirection, lightDirection ));
-                float LdotH = saturate(dot(lightDirection, halfDirection));
-                float3 specularColor = 0.0;
-                float specularMonochrome;
-                float node_5610 = 0.2;
-                float3 diffuseColor = float3(node_5610,node_5610,node_5610); // Need this for specular when using metallic
-                diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
-                specularMonochrome = 1.0-specularMonochrome;
-                float NdotV = abs(dot( normalDirection, viewDirection ));
-                float NdotH = saturate(dot( normalDirection, halfDirection ));
-                float VdotH = saturate(dot( viewDirection, halfDirection ));
-                float visTerm = SmithJointGGXVisibilityTerm( NdotL, NdotV, roughness );
-                float normTerm = GGXTerm(NdotH, roughness);
-                float specularPBL = (visTerm*normTerm) * UNITY_PI;
-                #ifdef UNITY_COLORSPACE_GAMMA
-                    specularPBL = sqrt(max(1e-4h, specularPBL));
-                #endif
-                specularPBL = max(0, specularPBL * NdotL);
-                #if defined(_SPECULARHIGHLIGHTS_OFF)
-                    specularPBL = 0.0;
-                #endif
-                specularPBL *= any(specularColor) ? 1.0 : 0.0;
-                float3 directSpecular = attenColor*specularPBL*FresnelTerm(specularColor, LdotH);
-                float3 specular = directSpecular;
 /////// Diffuse:
-                NdotL = dot( normalDirection, lightDirection );
-                float node_29 = 1.0;
-                float3 w = float3(node_29,node_29,node_29)*0.5; // Light wrapping
-                float3 NdotLWrap = NdotL * ( 1.0 - w );
-                float3 forwardLight = max(float3(0.0,0.0,0.0), NdotLWrap + w );
-                float3 backLight = max(float3(0.0,0.0,0.0), -NdotLWrap + w ) * float3(node_29,node_29,node_29);
-                NdotL = max(0.0,dot( normalDirection, lightDirection ));
-                half fd90 = 0.5 + 2 * LdotH * LdotH * (1-gloss);
-                float nlPow5 = Pow5(1-NdotLWrap);
-                float nvPow5 = Pow5(1-NdotV);
-                float3 directDiffuse = ((forwardLight+backLight) + ((1 +(fd90 - 1)*nlPow5) * (1 + (fd90 - 1)*nvPow5) * NdotL)) * attenColor;
+                float NdotL = max(0.0,dot( normalDirection, lightDirection ));
+                float3 directDiffuse = max( 0.0, NdotL) * attenColor;
+                float3 diffuseColor = _colour.rgb;
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
-                float3 finalColor = diffuse + specular;
-                return fixed4(finalColor * 0.3,0);
+                float3 finalColor = diffuse;
+                return fixed4(finalColor * 1,0);
             }
             ENDCG
         }
