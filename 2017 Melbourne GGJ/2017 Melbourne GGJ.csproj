@@ -443,6 +443,7 @@
     <None Include="Assets\Shaders\SnowObject.shader" />
     <None Include="Assets\Shaders\Terrain Noise.shader" />
     <None Include="Assets\Shaders\deesert_fauna.shader" />
+    <None Include="Assets\Shaders\moving_grass.shader" />
     <None Include="Assets\Sounds\DELETE ME.txt" />
     <None Include="Assets\Sprites\DELETE ME.txt" />
   </ItemGroup>
