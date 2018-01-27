@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: 93c4d5cd982101a4b9dc8b29687041ff
+timeCreated: 1517045882
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: CenntreMass_001
+    100002: group10
+    100004: group7
+    100006: group7 1
+    100008: group8
+    100010: group8 1
+    100012: group9
+    100014: Lava_001
+    100016: //RootNode
+    100018: pCube16
+    100020: pCube17
+    100022: pCube18
+    100024: pCube19
+    100026: pCube20
+    100028: pCube20 1
+    100030: pCube20 2
+    100032: pCube20 3
+    100034: pCube21
+    100036: pCube21 1
+    100038: pCube21 2
+    100040: pCube21 3
+    100042: pCube22
+    100044: pCube22 1
+    100046: pCube22 2
+    100048: pCube22 3
+    100050: pCube23
+    100052: pCube24
+    100054: pCube25
+    100056: pCube26
+    100058: pCube27
+    100060: pCube28
+    100062: pCube29
+    100064: pCube30
+    100066: pCube31
+    100068: pCube32
+    100070: pCube33
+    100072: pCube34
+    100074: pCube35
+    100076: pCube36
+    100078: pCube37
+    100080: pCube38
+    100082: pCube39
+    100084: pCube40
+    100086: pCube41
+    100088: pCube42
+    100090: pCube43
+    100092: pCube44
+    100094: pCube45
+    100096: pCube46
+    100098: pCube47
+    100100: pCube48
+    100102: pCube49
+    100104: pCube50
+    100106: pCube51
+    100108: pCube52
+    100110: pCube53
+    100112: pCylinder1
+    100114: pCylinder4
+    100116: pCylinder5
+    100118: pCylinder6
+    100120: RailWood_001
+    100122: Water_001
+    100124: WholeIsland_001
+    400000: CenntreMass_001
+    400002: group10
+    400004: group7
+    400006: group7 1
+    400008: group8
+    400010: group8 1
+    400012: group9
+    400014: Lava_001
+    400016: //RootNode
+    400018: pCube16
+    400020: pCube17
+    400022: pCube18
+    400024: pCube19
+    400026: pCube20
+    400028: pCube20 1
+    400030: pCube20 2
+    400032: pCube20 3
+    400034: pCube21
+    400036: pCube21 1
+    400038: pCube21 2
+    400040: pCube21 3
+    400042: pCube22
+    400044: pCube22 1
+    400046: pCube22 2
+    400048: pCube22 3
+    400050: pCube23
+    400052: pCube24
+    400054: pCube25
+    400056: pCube26
+    400058: pCube27
+    400060: pCube28
+    400062: pCube29
+    400064: pCube30
+    400066: pCube31
+    400068: pCube32
+    400070: pCube33
+    400072: pCube34
+    400074: pCube35
+    400076: pCube36
+    400078: pCube37
+    400080: pCube38
+    400082: pCube39
+    400084: pCube40
+    400086: pCube41
+    400088: pCube42
+    400090: pCube43
+    400092: pCube44
+    400094: pCube45
+    400096: pCube46
+    400098: pCube47
+    400100: pCube48
+    400102: pCube49
+    400104: pCube50
+    400106: pCube51
+    400108: pCube52
+    400110: pCube53
+    400112: pCylinder1
+    400114: pCylinder4
+    400116: pCylinder5
+    400118: pCylinder6
+    400120: RailWood_001
+    400122: Water_001
+    400124: WholeIsland_001
+    2300000: CenntreMass_001
+    2300002: Lava_001
+    2300004: pCube16
+    2300006: pCube17
+    2300008: pCube18
+    2300010: pCube19
+    2300012: pCube20
+    2300014: pCube20 1
+    2300016: pCube20 2
+    2300018: pCube20 3
+    2300020: pCube21
+    2300022: pCube21 1
+    2300024: pCube21 2
+    2300026: pCube21 3
+    2300028: pCube22
+    2300030: pCube22 1
+    2300032: pCube22 2
+    2300034: pCube22 3
+    2300036: pCube23
+    2300038: pCube24
+    2300040: pCube25
+    2300042: pCube26
+    2300044: pCube27
+    2300046: pCube28
+    2300048: pCube29
+    2300050: pCube30
+    2300052: pCube31
+    2300054: pCube32
+    2300056: pCube33
+    2300058: pCube34
+    2300060: pCube35
+    2300062: pCube36
+    2300064: pCube37
+    2300066: pCube38
+    2300068: pCube39
+    2300070: pCube40
+    2300072: pCube41
+    2300074: pCube42
+    2300076: pCube43
+    2300078: pCube44
+    2300080: pCube45
+    2300082: pCube46
+    2300084: pCube47
+    2300086: pCube48
+    2300088: pCube49
+    2300090: pCube50
+    2300092: pCube51
+    2300094: pCube52
+    2300096: pCube53
+    2300098: pCylinder1
+    2300100: pCylinder4
+    2300102: pCylinder5
+    2300104: pCylinder6
+    2300106: Water_001
+    2300108: WholeIsland_001
+    3300000: CenntreMass_001
+    3300002: Lava_001
+    3300004: pCube16
+    3300006: pCube17
+    3300008: pCube18
+    3300010: pCube19
+    3300012: pCube20
+    3300014: pCube20 1
+    3300016: pCube20 2
+    3300018: pCube20 3
+    3300020: pCube21
+    3300022: pCube21 1
+    3300024: pCube21 2
+    3300026: pCube21 3
+    3300028: pCube22
+    3300030: pCube22 1
+    3300032: pCube22 2
+    3300034: pCube22 3
+    3300036: pCube23
+    3300038: pCube24
+    3300040: pCube25
+    3300042: pCube26
+    3300044: pCube27
+    3300046: pCube28
+    3300048: pCube29
+    3300050: pCube30
+    3300052: pCube31
+    3300054: pCube32
+    3300056: pCube33
+    3300058: pCube34
+    3300060: pCube35
+    3300062: pCube36
+    3300064: pCube37
+    3300066: pCube38
+    3300068: pCube39
+    3300070: pCube40
+    3300072: pCube41
+    3300074: pCube42
+    3300076: pCube43
+    3300078: pCube44
+    3300080: pCube45
+    3300082: pCube46
+    3300084: pCube47
+    3300086: pCube48
+    3300088: pCube49
+    3300090: pCube50
+    3300092: pCube51
+    3300094: pCube52
+    3300096: pCube53
+    3300098: pCylinder1
+    3300100: pCylinder4
+    3300102: pCylinder5
+    3300104: pCylinder6
+    3300106: Water_001
+    3300108: WholeIsland_001
+    4300000: Lava_001
+    4300002: Water_001
+    4300004: WholeIsland_001
+    4300006: CenntreMass_001
+    4300008: pCube16
+    4300010: pCylinder1
+    4300012: pCube17
+    4300014: pCylinder4
+    4300016: pCube18
+    4300018: pCube19
+    4300020: pCylinder5
+    4300022: pCylinder6
+    4300024: pCube22
+    4300026: pCube21
+    4300028: pCube20
+    4300030: pCube27
+    4300032: pCube28
+    4300034: pCube29
+    4300036: pCube49
+    4300038: pCube50
+    4300040: pCube51
+    4300042: pCube22
+    4300044: pCube21
+    4300046: pCube20
+    4300048: pCube24
+    4300050: pCube25
+    4300052: pCube26
+    4300054: pCube47
+    4300056: pCube48
+    4300058: pCube52
+    4300060: pCube53
+    4300062: pCube22
+    4300064: pCube21
+    4300066: pCube20
+    4300068: pCube22
+    4300070: pCube21
+    4300072: pCube20
+    4300074: pCube23
+    4300076: pCube30
+    4300078: pCube31
+    4300080: pCube46
+    4300082: pCube45
+    4300084: pCube44
+    4300086: pCube43
+    4300088: pCube42
+    4300090: pCube41
+    4300092: pCube40
+    4300094: pCube39
+    4300096: pCube38
+    4300098: pCube37
+    4300100: pCube36
+    4300102: pCube35
+    4300104: pCube34
+    4300106: pCube33
+    4300108: pCube32
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
