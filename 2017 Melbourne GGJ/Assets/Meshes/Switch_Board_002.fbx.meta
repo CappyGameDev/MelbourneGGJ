@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 61d53ab62cbf5e845a22c2b4546dad31
+timeCreated: 1517017662
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Aerial_Attachment_001
+    100002: Aerial_Attachment_002
+    100004: Aerial_Attachment_003
+    100006: Aerial_Attachment_004
+    100008: BulbTubing_001
+    100010: Depository_001
+    100012: Filament_001
+    100014: Fluid_Tube
+    100016: Glass_Tube_003
+    100018: Glass_Tube_004
+    100020: GlassTube_001
+    100022: MetalCap_001
+    100024: MetalCap_002
+    100026: Needle_001
+    100028: Paper_001
+    100030: pCube17
+    100032: pCylinder9
+    100034: Plug_001
+    100036: Plug_002
+    100038: Plug_003
+    100040: Plug_004
+    100042: Plug_005
+    100044: Radar_Dish
+    100046: Screen_001
+    100048: Screen_002
+    100050: //RootNode
+    100052: SwitchBoard_Table_001
+    100054: Switchboard_Table_Legs_001
+    100056: SwitchBoardBox_001
+    400000: Aerial_Attachment_001
+    400002: Aerial_Attachment_002
+    400004: Aerial_Attachment_003
+    400006: Aerial_Attachment_004
+    400008: BulbTubing_001
+    400010: Depository_001
+    400012: Filament_001
+    400014: Fluid_Tube
+    400016: Glass_Tube_003
+    400018: Glass_Tube_004
+    400020: GlassTube_001
+    400022: MetalCap_001
+    400024: MetalCap_002
+    400026: Needle_001
+    400028: Paper_001
+    400030: pCube17
+    400032: pCylinder9
+    400034: Plug_001
+    400036: Plug_002
+    400038: Plug_003
+    400040: Plug_004
+    400042: Plug_005
+    400044: Radar_Dish
+    400046: Screen_001
+    400048: Screen_002
+    400050: //RootNode
+    400052: SwitchBoard_Table_001
+    400054: Switchboard_Table_Legs_001
+    400056: SwitchBoardBox_001
+    2300000: Aerial_Attachment_001
+    2300002: Aerial_Attachment_002
+    2300004: Aerial_Attachment_003
+    2300006: Aerial_Attachment_004
+    2300008: BulbTubing_001
+    2300010: Depository_001
+    2300012: Filament_001
+    2300014: Glass_Tube_003
+    2300016: Glass_Tube_004
+    2300018: GlassTube_001
+    2300020: MetalCap_001
+    2300022: MetalCap_002
+    2300024: Needle_001
+    2300026: Paper_001
+    2300028: pCube17
+    2300030: pCylinder9
+    2300032: Plug_001
+    2300034: Plug_002
+    2300036: Plug_003
+    2300038: Plug_004
+    2300040: Plug_005
+    2300042: Screen_001
+    2300044: Screen_002
+    2300046: SwitchBoard_Table_001
+    2300048: Switchboard_Table_Legs_001
+    2300050: SwitchBoardBox_001
+    3300000: Aerial_Attachment_001
+    3300002: Aerial_Attachment_002
+    3300004: Aerial_Attachment_003
+    3300006: Aerial_Attachment_004
+    3300008: BulbTubing_001
+    3300010: Depository_001
+    3300012: Filament_001
+    3300014: Glass_Tube_003
+    3300016: Glass_Tube_004
+    3300018: GlassTube_001
+    3300020: MetalCap_001
+    3300022: MetalCap_002
+    3300024: Needle_001
+    3300026: Paper_001
+    3300028: pCube17
+    3300030: pCylinder9
+    3300032: Plug_001
+    3300034: Plug_002
+    3300036: Plug_003
+    3300038: Plug_004
+    3300040: Plug_005
+    3300042: Screen_001
+    3300044: Screen_002
+    3300046: SwitchBoard_Table_001
+    3300048: Switchboard_Table_Legs_001
+    3300050: SwitchBoardBox_001
+    4300000: Switchboard_Table_Legs_001
+    4300002: SwitchBoard_Table_001
+    4300004: SwitchBoardBox_001
+    4300006: Plug_001
+    4300008: Plug_002
+    4300010: Plug_003
+    4300012: Plug_004
+    4300014: Plug_005
+    4300016: BulbTubing_001
+    4300018: GlassTube_001
+    4300020: Screen_002
+    4300022: MetalCap_001
+    4300024: MetalCap_002
+    4300026: Glass_Tube_003
+    4300028: Glass_Tube_004
+    4300030: Aerial_Attachment_001
+    4300032: Aerial_Attachment_002
+    4300034: Aerial_Attachment_003
+    4300036: Aerial_Attachment_004
+    4300038: Screen_001
+    4300040: Filament_001
+    4300042: Needle_001
+    4300044: Paper_001
+    4300046: pCylinder9
+    4300048: pCube17
+    4300050: Depository_001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

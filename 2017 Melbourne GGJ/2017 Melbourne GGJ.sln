@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2017 Melbourne GGJ", "2017 Melbourne GGJ.csproj", "{985B6C82-67CB-751B-E38D-989F39A2C369}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2017 Melbourne GGJ.Editor", "2017 Melbourne GGJ.Editor.csproj", "{F4DD05E0-9456-1F2C-7F1A-E2DEDA8B565D}"
