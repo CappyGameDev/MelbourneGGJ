@@ -37,4 +37,4 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _foam: {r: 0, g: 0, b: 0, a: 1}
-    - _water: {r: 1, g: 0, b: 0, a: 1}
+    - _water: {r: 0.58823526, g: 0.012975791, b: 0.012975791, a: 1}
