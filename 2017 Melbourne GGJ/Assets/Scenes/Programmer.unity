@@ -400,11 +400,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 957d8efaa4c9164418f63c0401ee66d7, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &676496386 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1675182707026490, guid: e548d1022757c1e4ba6234fa0a87f0bc,
-    type: 2}
-  m_PrefabInternal: {fileID: 975263197}
 --- !u!1 &897425746
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,7 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe696fedc4cee94597288f8e90b89b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainLight: {fileID: 0}
+  mainLight: {fileID: 2095557298}
   connectionsrequired:
   - A
   - B
@@ -590,15 +585,10 @@ MonoBehaviour:
   ConnectionsText: {fileID: 1680492814106596, guid: 3ff5148d552b5e247b85fa4db9081b02,
     type: 2}
   tries: 0
-  WorldOne: {fileID: 0}
-  WorldTwo: {fileID: 0}
-  WorldThree: {fileID: 0}
   Toaster: {fileID: 220475284}
   Toast: {fileID: 1771011275}
   toastUp: 0
   ToastYOffset: 2.2
-  SwitchBoard: {fileID: 1851026007}
-  Pegs: {fileID: 676496386}
   Canvas: {fileID: 4265546}
   FadeSpeed: 0.05
 --- !u!4 &1176005243
@@ -771,11 +761,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1211597301881686, guid: 957d8efaa4c9164418f63c0401ee66d7,
     type: 2}
   m_PrefabInternal: {fileID: 492124047}
---- !u!1 &1851026007 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1791233579300610, guid: 3bc41569257ee9440be584b3bae06c7f,
-    type: 2}
-  m_PrefabInternal: {fileID: 476297260}
 --- !u!114 &1949582813 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114790083669580036, guid: 699938900081ebd44b17cd9daf9b4bc2,
