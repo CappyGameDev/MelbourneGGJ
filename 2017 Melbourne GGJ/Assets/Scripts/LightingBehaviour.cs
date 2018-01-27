@@ -13,10 +13,14 @@ public class LightingBehaviour : MonoBehaviour {
     private float timer;
     private float decayRate;
 
-    private float minFlickerSpeed;
-    private float maxFlickerSpeed;
+    public float minFlickerSpeed;
+    public float maxFlickerSpeed;
 
-    private float routineStop;
+    private bool routineStop;
+
+    Coroutine ceilingFlicker;
+
+    private bool on;
 
 	// Use this for initialization
 	void Start () {
@@ -26,17 +30,16 @@ public class LightingBehaviour : MonoBehaviour {
         switchBoardLight.GetComponent<Light>().enabled = false;
         ceilingLight.GetComponent<Light>().enabled = false;
         minFlickerSpeed = 1;
-        maxFlickerSpeed = 10;
+        maxFlickerSpeed = 50;
+        ceilingFlicker = StartCoroutine(Flashing());
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (routineStop == 3)
+        if (routineStop == true)
         {
-            StopCoroutine("Flashing");
-            timer0 = 3;
-
+            StopCoroutine(ceilingFlicker);
         }
 
         if (timer0 == 1)
@@ -50,21 +53,12 @@ public class LightingBehaviour : MonoBehaviour {
         }
         if (timer0 == 2)
         {
-            StartCoroutine(Flashing());
+            ceilingLight.GetComponent<Light>().enabled = true;
+            yield return new WaitForSeconds(Random.Range(minFlickerSpeed, maxFlickerSpeed));
         }
         if (timer0 == 3)
         {
-
+        
         }
 	}
-    public IEnumerator Flashing ()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(Random.Range(minFlickerSpeed, maxFlickerSpeed));
-            ceilingLight.GetComponent<Light>().enabled = !ceilingLight.GetComponent<Light>().enabled;
-            routineStop += 1;
-            Debug.Log("Value = " + routineStop);
-        }
-    }
 }
