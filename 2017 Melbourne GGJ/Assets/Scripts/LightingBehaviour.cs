@@ -57,7 +57,7 @@ public class LightingBehaviour : MonoBehaviour {
 
         }
 	}
-    IEnumerator Flashing ()
+    public IEnumerator Flashing ()
     {
         while (true)
         {
