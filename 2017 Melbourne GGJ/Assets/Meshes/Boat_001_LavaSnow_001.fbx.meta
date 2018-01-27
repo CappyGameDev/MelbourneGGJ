@@ -11,27 +11,32 @@ ModelImporter:
     100006: Oar_Holders_002
     100008: Oars_001
     100010: Oars_002
+    100012: Boat_001
     400000: Boat
     400002: //RootNode
     400004: Oar_Holders_001
     400006: Oar_Holders_002
     400008: Oars_001
     400010: Oars_002
+    400012: Boat_001
     2300000: Boat
     2300002: Oar_Holders_001
     2300004: Oar_Holders_002
     2300006: Oars_001
     2300008: Oars_002
+    2300010: Boat_001
     3300000: Boat
     3300002: Oar_Holders_001
     3300004: Oar_Holders_002
     3300006: Oars_001
     3300008: Oars_002
+    3300010: Boat_001
     4300000: Oars_001
     4300002: Oars_002
     4300004: Oar_Holders_001
     4300006: Oar_Holders_002
     4300008: Boat
+    4300010: Boat_001
   materials:
     importMaterials: 1
     materialName: 0
