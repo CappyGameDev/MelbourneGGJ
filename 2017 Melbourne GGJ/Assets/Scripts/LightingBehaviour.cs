@@ -8,6 +8,8 @@ public class LightingBehaviour : MonoBehaviour
     public float flashTimer;
     bool flashing = true;
     private Light flashLight;
+    public float minFlashTime;
+    public float maxFlashTime;
 
     void Awake()
     {
@@ -35,7 +37,7 @@ public class LightingBehaviour : MonoBehaviour
     {
         while (flashing)
         {
-            yield return new WaitForSeconds(Random.Range(0.15f, 0.5f));
+            yield return new WaitForSeconds(Random.Range(minFlashTime, maxFlashTime));
             flashLight.enabled = !flashLight.enabled;
 
         }
