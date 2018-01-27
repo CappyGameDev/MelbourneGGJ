@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Plug
   - Hole
+  - Manager
+  - MainLight
+  - Toaster
+  - Toast
+  - Canvas
   layers:
   - Default
   - TransparentFX

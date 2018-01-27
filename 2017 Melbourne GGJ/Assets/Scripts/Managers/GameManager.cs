@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -100,7 +102,36 @@ public class GameManager : MonoBehaviour
     public string[] connectionsrequired;
     public Connectors[] connectors;
 
-    public Connections[] inGameConnections = new Connections[1];
+    public Connections[] inGameConnections = new Connections[2];
+
+    public float streak = 0;
+    public Text streakText;
+
+    public Canvas mainCanvas;
+
+    public GameObject ConnectionsText;
+
+    public float tries = 0;
+
+
+    [Header("Toaster")]
+    public GameObject Toaster;
+    public GameObject Toast;
+    public bool toastUp = false;
+    public float ToastYOffset;
+    
+    public GameObject Canvas;
+
+    [Header("light")]
+    public float FadeSpeed;
+
+
+    void Awake()
+    {
+        Canvas = GameObject.FindGameObjectWithTag("Canvas");
+        Toast = GameObject.FindGameObjectWithTag("Toast");
+        Toaster = GameObject.FindGameObjectWithTag("Toaster");
+    }
 
     // Use this for initialization
     void Start()
@@ -108,41 +139,128 @@ public class GameManager : MonoBehaviour
         mainLight.intensity = 0.0f;
         ConnectionsRequired = new Connections[connectionsrequired.Length / 2];
         initializeArray();
-        for (int i = 0; i < ConnectionsRequired.Length; i++)
-        {
-            Debug.Log(ConnectionsRequired[i].ConnectionOne + " " + ConnectionsRequired[i].ConnectionTwo);
-        }
+        tries = 0;
 
+        //StartCoroutine(spawnText());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (mainLight.intensity != 1)
+        //streakText.text = "Streak: " + streak;
+
+        //try counter
+
+        if (tries == 4)
         {
-            LightFade();
+            toastUp = true;
+        }
+
+        if (toastUp == true)
+        {
+            Toast.transform.position = new Vector3(Toast.transform.position.x, ToastYOffset, Toast.transform.position.z);
+        }
+
+        Debug.Log(tries);
+        //try counter
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "Programmer":
+                Connections SceneChange = new Connections("A", "E");
+                for (int i = 0; i < inGameConnections.Length; i++)
+                {
+                    if (inGameConnections[i] != null)
+                    {
+                        if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
+                            || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
+                        {
+                            SceneManager.LoadSceneAsync("(2) Jess");
+                        }
+
+                    }
+                }
+                break;
+            case "(1) Charlie":
+                SceneChange = new Connections("D", "C");
+                for (int i = 0; i < inGameConnections.Length; i++)
+                {
+                    if (inGameConnections[i] != null)
+                    {
+                        if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
+                            || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
+                        {
+                            SceneManager.LoadSceneAsync("(2) Jess");
+                        }
+
+                    }
+                }
+                break;
+            case "(2) Jess":
+                SceneChange = new Connections("E", "B");
+                for (int i = 0; i < inGameConnections.Length; i++)
+                {
+                    if (inGameConnections[i] != null)
+                    {
+                        if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
+                            || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
+                        {
+                            SceneManager.LoadSceneAsync("(3) John");
+                        }
+
+                    }
+                }
+                break;
+            case "(3) John":
+                SceneChange = new Connections("C", "A");
+                for (int i = 0; i < inGameConnections.Length; i++)
+                {
+                    if (inGameConnections[i] != null)
+                    {
+                        if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
+                            || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
+                        {
+                            SceneManager.LoadSceneAsync("(4) Bruno");
+                        }
+
+                    }
+                }
+                break;
+            case "(4) Bruno":
+                SceneChange = new Connections("D", "A");
+                for (int i = 0; i < inGameConnections.Length; i++)
+                {
+                    if (inGameConnections[i] != null)
+                    {
+                        if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
+                            || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
+                        {
+                            Application.Quit();
+                        }
+
+                    }
+                }
+                break;
+        }
+
+
+
+        if (mainLight != null)
+        {
+            if (mainLight.intensity != 1)
+            {
+                LightFade();
+
+            }
 
         }
+
+        //need to fix this to have more than 1 plug set working 
         for (int i = 0; i < inGameConnections.Length; i++)
         {
-            inGameConnections[i] = new Connections(GameObject.FindGameObjectsWithTag("Plug")[0].GetComponent<PlugMovement>().holeImIn, GameObject.FindGameObjectsWithTag("Plug")[1].GetComponent<PlugMovement>().holeImIn);
+            //get from children?
+            if (GameObject.FindGameObjectsWithTag("Plug").Length > 1)
+                inGameConnections[i] = new Connections(GameObject.FindGameObjectsWithTag("Plug")[0].GetComponent<PlugMovement>().holeImIn, GameObject.FindGameObjectsWithTag("Plug")[1].GetComponent<PlugMovement>().holeImIn);
         }
-
-        Debug.Log(inGameConnections[0].ConnectionOne + " " + inGameConnections[0].ConnectionTwo);
-
-        for (int i = 0; i < ConnectionsRequired.Length; i++)
-        {
-            for (int j = 0; j < inGameConnections.Length; j++)
-            {
-                if (inGameConnections[j].ConnectionOne == ConnectionsRequired[i].ConnectionOne && inGameConnections[j].ConnectionTwo == ConnectionsRequired[i].ConnectionTwo)
-                {
-                    ConnectionsRequired[i].ConnectionOne = "null";
-                    ConnectionsRequired[i].ConnectionTwo = "null";
-                    Debug.Log("Matched: " + ConnectionsRequired[i].ConnectionOne + " and " + ConnectionsRequired[i].ConnectionTwo);
-                }
-            }
-        }
-
 
     }
 
@@ -170,6 +288,16 @@ public class GameManager : MonoBehaviour
     private void LightFade()
     {
         mainLight.intensity = Mathf.Lerp(mainLight.intensity, 1, t);
-        t += 0.05f * Time.deltaTime;
+        t += FadeSpeed * Time.deltaTime;
+    }
+
+    IEnumerator spawnText()
+    {
+        for (int i = 0; i < ConnectionsRequired.Length; i++)
+        {
+            GameObject newText = (GameObject)Instantiate(ConnectionsText, mainCanvas.transform);
+            newText.GetComponent<TextScript>().connection = ConnectionsRequired[i];
+            yield return new WaitForSeconds(5);
+        }
     }
 }

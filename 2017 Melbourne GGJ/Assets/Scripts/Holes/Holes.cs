@@ -10,6 +10,8 @@ public class Holes : MonoBehaviour
     public string holeName;
 
     public Light l;
+    public float RayOffset;
+    public float RayMaxDist;
 
     void Awake()
     {
@@ -19,18 +21,18 @@ public class Holes : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        this.gameObject.tag = "Hole";
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!checkRays())
-        { 
+        if (!checkRays())
+        {
             tempLightOn = false;
         }
 
-        if(tempLightOn)
+        if (tempLightOn)
         {
             l.enabled = true;
         }
@@ -41,18 +43,36 @@ public class Holes : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision other)
-    { 
+    {
         GameObject otherCol = other.gameObject;
         if (otherCol.tag == "Plug")
         {
-            otherCol.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, otherCol.transform.position.z);
-            isActive = true;
+            otherCol.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, otherCol.transform.position.z);
+            //isActive = true;
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        GameObject otherCol = col.gameObject;
+        if (otherCol.tag == "Plug")
+        {
+            otherCol.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, otherCol.transform.position.z);
+            //isActive = true;
+        }
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        GameObject otherCol = col.gameObject;
+        if (otherCol.tag == "Plug")
+        {
+            isActive = false;
         }
     }
 
     void OnCollisionExit(Collision other)
     {
-
         GameObject otherCol = other.gameObject;
         if (otherCol.tag == "Plug")
         {
@@ -63,30 +83,40 @@ public class Holes : MonoBehaviour
     bool checkRays()
     {
         RaycastHit hit;
-        Debug.DrawRay(transform.position, -transform.forward * 10, Color.red);
-        if (Physics.Raycast(transform.position, -transform.forward * 10, out hit))
+        Debug.DrawRay(transform.position, transform.right * RayMaxDist, Color.red);
+        if (Physics.Raycast(transform.position, transform.right * RayMaxDist, out hit))
         {
-            return true;
+            if (hit.collider.gameObject.tag == "Plug")
+                return true;
+            else return false;
         }
-        Debug.DrawRay(new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z), -transform.forward * 10, Color.red);
-        if (Physics.Raycast(new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z), -transform.forward * 10, out hit))
+        Debug.DrawRay(new Vector3(transform.position.x + RayOffset, transform.position.y, transform.position.z), transform.right * RayMaxDist, Color.red);
+        if (Physics.Raycast(new Vector3(transform.position.x + RayOffset, transform.position.y, transform.position.z), transform.right * RayMaxDist, out hit))
         {
-            return true;
+            if (hit.collider.gameObject.tag == "Plug")
+                return true;
+            else return false;
         }
-        Debug.DrawRay(new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z), -transform.forward * 10, Color.red);
-        if (Physics.Raycast(new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z), -transform.forward * 10, out hit))
+        Debug.DrawRay(new Vector3(transform.position.x - RayOffset, transform.position.y, transform.position.z), transform.right * RayMaxDist, Color.red);
+        if (Physics.Raycast(new Vector3(transform.position.x - RayOffset, transform.position.y, transform.position.z), transform.right * RayMaxDist, out hit))
         {
-            return true;
+            if (hit.collider.gameObject.tag == "Plug")
+                return true;
+            else return false;
         }
-        Debug.DrawRay(new Vector3(transform.position.x, transform.position.y + 0.1f, transform.position.z), -transform.forward * 10, Color.red);
-        if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 0.1f, transform.position.z), -transform.forward * 10, out hit))
+        Debug.DrawRay(new Vector3(transform.position.x, transform.position.y + RayOffset, transform.position.z), transform.right * RayMaxDist, Color.red);
+        if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + RayOffset, transform.position.z), transform.right * RayMaxDist, out hit))
         {
-            return true;
+            if (hit.collider.gameObject.tag == "Plug")
+                return true;
+            else return false;
         }
-        Debug.DrawRay(new Vector3(transform.position.x, transform.position.y - 0.1f, transform.position.z), -transform.forward * 10, Color.red);
-        if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y - 0.1f, transform.position.z), -transform.forward * 10, out hit))
+        Debug.DrawRay(new Vector3(transform.position.x, transform.position.y - RayOffset, transform.position.z), transform.right * RayMaxDist, Color.red);
+        if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y - RayOffset, transform.position.z), transform.right * RayMaxDist, out hit))
         {
-            return true;
+            if (hit.collider.gameObject.tag == "Plug")
+                return true;
+            else return false;
         }
 
         else return false;
