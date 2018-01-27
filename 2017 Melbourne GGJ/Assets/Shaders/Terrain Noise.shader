@@ -90,9 +90,8 @@ Shader "Shader Forge/Terrain Noise" {
                 float3 indirectDiffuse = float3(0,0,0);
                 indirectDiffuse += UNITY_LIGHTMODEL_AMBIENT.rgb; // Ambient Light
                 float4 _colour_var = tex2D(_colour,TRANSFORM_TEX(i.uv0, _colour));
-                float3 _textureorcolour_var = lerp( _Color.rgb, _colour_var.rgb, _textureorcolour );
                 float4 _noise_var = tex2D(_noise,TRANSFORM_TEX(i.uv0, _noise));
-                float3 diffuseColor = lerp(_textureorcolour_var,float3(_noise_var.r,_noise_var.r,_noise_var.r),_blend);
+                float3 diffuseColor = lerp(lerp( _Color.rgb, _colour_var.rgb, _textureorcolour ),float3(_noise_var.r,_noise_var.r,_noise_var.r),_blend);
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse + specular;
@@ -174,9 +173,8 @@ Shader "Shader Forge/Terrain Noise" {
                 NdotL = max(0.0,dot( normalDirection, lightDirection ));
                 float3 directDiffuse = max( 0.0, NdotL) * attenColor;
                 float4 _colour_var = tex2D(_colour,TRANSFORM_TEX(i.uv0, _colour));
-                float3 _textureorcolour_var = lerp( _Color.rgb, _colour_var.rgb, _textureorcolour );
                 float4 _noise_var = tex2D(_noise,TRANSFORM_TEX(i.uv0, _noise));
-                float3 diffuseColor = lerp(_textureorcolour_var,float3(_noise_var.r,_noise_var.r,_noise_var.r),_blend);
+                float3 diffuseColor = lerp(lerp( _Color.rgb, _colour_var.rgb, _textureorcolour ),float3(_noise_var.r,_noise_var.r,_noise_var.r),_blend);
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse + specular;
