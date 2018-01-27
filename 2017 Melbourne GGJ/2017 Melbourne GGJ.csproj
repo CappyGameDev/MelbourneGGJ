@@ -183,6 +183,7 @@
     <Compile Include="Assets\3rdPartyAssets\Volumetric Lights\Scripts\VolumetricLightRenderer.cs" />
     <Compile Include="Assets\RandomRotator.cs" />
     <Compile Include="Assets\Scripts\Holes\Holes.cs" />
+    <Compile Include="Assets\Scripts\LightingBehaviour.cs" />
     <Compile Include="Assets\Scripts\Managers\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\LightFade.cs" />
