@@ -169,16 +169,24 @@ public class GameManager : MonoBehaviour
                 {
                     if (specialFeatures[j] != null)
                     {
-                        if (inGameConnections[i].Equals(specialFeatures[j]))
+                        if (specialFeatures[j].ConnectionOne != "" && specialFeatures[j].ConnectionTwo != "")
                         {
-                            foreach(GameObject go in Animations)
+                            if (inGameConnections[i].Equals(specialFeatures[j]))
                             {
-                                if(!go.activeSelf)
+                                Debug.Log("Matched anim");
+                                for (int k = 0; k < Animations.Length; k++)
                                 {
-                                    go.SetActive(true);
-                                    break;
+                                    if (!Animations[k].activeSelf)
+                                    {
+                                        Animations[k].SetActive(true);
+                                        specialFeatures[j].ConnectionOne = "";
+                                        specialFeatures[j].ConnectionTwo = "";
+                                        break;
+                                    }
+
                                 }
                             }
+
                         }
 
                     }
@@ -217,7 +225,7 @@ public class GameManager : MonoBehaviour
                         if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
                             || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
                         {
-                            SceneManager.LoadSceneAsync("(2) Jess");
+                            SceneManager.LoadSceneAsync("(1) Charlie");
                         }
 
                     }
@@ -277,7 +285,7 @@ public class GameManager : MonoBehaviour
                         if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
                             || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
                         {
-                            Application.Quit();
+                            SceneManager.LoadSceneAsync("Start");
                         }
 
                     }
