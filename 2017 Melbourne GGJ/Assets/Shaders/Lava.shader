@@ -167,8 +167,7 @@ Shader "Shader Forge/Lava" {
                 float4 node_8186 = _Time;
                 float2 node_2689 = (float2(i.posWorld.r,(i.posWorld.b+(node_8186.g*_Speed3)))*_scale_copy);
                 float4 _noise2_var = tex2D(_noise2,TRANSFORM_TEX(node_2689, _noise2));
-                float node_4205 = saturate((sceneZ-partZ)/_depth);
-                float node_8202 = saturate((node_4205*2.0+-1.0));
+                float node_8202 = saturate((saturate((sceneZ-partZ)/_depth)*2.0+-1.0));
                 float node_8093 = saturate((saturate(( _noise3_var.g > 0.5 ? max(_noise2_var.g,2.0*(_noise3_var.g-0.5)) : min(_noise2_var.g,2.0*_noise3_var.g) ))*_brightness*node_8202));
                 float3 diffuseColor = lerp(_dark_copy.rgb,_bright_copy.rgb,node_8093);
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
@@ -324,8 +323,7 @@ Shader "Shader Forge/Lava" {
                 float4 node_8186 = _Time;
                 float2 node_2689 = (float2(i.posWorld.r,(i.posWorld.b+(node_8186.g*_Speed3)))*_scale_copy);
                 float4 _noise2_var = tex2D(_noise2,TRANSFORM_TEX(node_2689, _noise2));
-                float node_4205 = saturate((sceneZ-partZ)/_depth);
-                float node_8202 = saturate((node_4205*2.0+-1.0));
+                float node_8202 = saturate((saturate((sceneZ-partZ)/_depth)*2.0+-1.0));
                 float node_8093 = saturate((saturate(( _noise3_var.g > 0.5 ? max(_noise2_var.g,2.0*(_noise3_var.g-0.5)) : min(_noise2_var.g,2.0*_noise3_var.g) ))*_brightness*node_8202));
                 float3 diffuseColor = lerp(_dark_copy.rgb,_bright_copy.rgb,node_8093);
                 float3 diffuse = directDiffuse * diffuseColor;
