@@ -120,12 +120,19 @@ public class GameManager : MonoBehaviour
     private Vector3 ToastStartPos;
     public bool toastUp = false;
     public float ToastYOffset;
-    
+
     public GameObject Canvas;
 
     [Header("light")]
     public float FadeSpeed;
 
+    [Header("Plug Things")]
+    public string[] Combos = new string[10];
+    public Connections[] specialFeatures = new Connections[5];
+    public string[] SceneLoad = new string[2];
+
+    [Header("Animations")]
+    public GameObject[] Animations;
 
     void Awake()
     {
@@ -140,6 +147,7 @@ public class GameManager : MonoBehaviour
         mainLight.intensity = 0.0f;
         ConnectionsRequired = new Connections[connectionsrequired.Length / 2];
         initializeArray();
+        initializeCombosArray();
         tries = 0;
         ToastStartPos = Toast.transform.position;
 
@@ -151,7 +159,40 @@ public class GameManager : MonoBehaviour
     {
         //streakText.text = "Streak: " + streak;
 
+        //animations player
+
+        for (int i = 0; i < inGameConnections.Length; i++)
+        {
+            if (inGameConnections[i] != null)
+            {
+                for (int j = 0; j < specialFeatures.Length; j++)
+                {
+                    if (specialFeatures[j] != null)
+                    {
+                        if (inGameConnections[i].Equals(specialFeatures[j]))
+                        {
+                            foreach(GameObject go in Animations)
+                            {
+                                if(!go.activeSelf)
+                                {
+                                    go.SetActive(true);
+                                    break;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+        //end animations player
+
+
         //try counter
+
+
 
         if (tries == 4)
         {
@@ -167,8 +208,8 @@ public class GameManager : MonoBehaviour
         //try counter
         switch (SceneManager.GetActiveScene().name)
         {
-            case "Programmer":
-                Connections SceneChange = new Connections("A", "E");
+            case "Start":
+                Connections SceneChange = new Connections(SceneLoad[0], SceneLoad[1]);
                 for (int i = 0; i < inGameConnections.Length; i++)
                 {
                     if (inGameConnections[i] != null)
@@ -183,7 +224,7 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case "(1) Charlie":
-                SceneChange = new Connections("D", "C");
+                SceneChange = new Connections(SceneLoad[0], SceneLoad[1]);
                 for (int i = 0; i < inGameConnections.Length; i++)
                 {
                     if (inGameConnections[i] != null)
@@ -198,7 +239,7 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case "(2) Jess":
-                SceneChange = new Connections("E", "B");
+                SceneChange = new Connections(SceneLoad[0], SceneLoad[1]);
                 for (int i = 0; i < inGameConnections.Length; i++)
                 {
                     if (inGameConnections[i] != null)
@@ -213,7 +254,7 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case "(3) John":
-                SceneChange = new Connections("C", "A");
+                SceneChange = new Connections(SceneLoad[0], SceneLoad[1]);
                 for (int i = 0; i < inGameConnections.Length; i++)
                 {
                     if (inGameConnections[i] != null)
@@ -228,7 +269,7 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case "(4) Bruno":
-                SceneChange = new Connections("D", "A");
+                SceneChange = new Connections(SceneLoad[0], SceneLoad[1]);
                 for (int i = 0; i < inGameConnections.Length; i++)
                 {
                     if (inGameConnections[i] != null)
@@ -280,6 +321,25 @@ public class GameManager : MonoBehaviour
                 else
                 {
                     ConnectionsRequired[i] = new Connections(connectionsrequired[i], connectionsrequired[i + 1]);
+                }
+            }
+        }
+    }
+
+    private void initializeCombosArray()
+    {
+        for (int i = 0; i < Combos.Length; i += 2)
+        {
+            if (Combos[i + 1] != null)
+            {
+                if (i != 0)
+                {
+                    if (i / 2 <= specialFeatures.Length)
+                        specialFeatures[i / 2] = new Connections(Combos[i], Combos[i + 1]);
+                }
+                else
+                {
+                    specialFeatures[i] = new Connections(Combos[i], Combos[i + 1]);
                 }
             }
         }
