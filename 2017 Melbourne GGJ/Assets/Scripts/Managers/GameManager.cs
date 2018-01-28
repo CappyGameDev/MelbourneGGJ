@@ -255,7 +255,7 @@ public class GameManager : MonoBehaviour
                         if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
                             || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
                         {
-                            SceneManager.LoadSceneAsync("(3) John");
+                            SceneManager.LoadSceneAsync("(3) John V2");
                         }
 
                     }
