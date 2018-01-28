@@ -117,6 +117,7 @@ public class GameManager : MonoBehaviour
     [Header("Toaster")]
     public GameObject Toaster;
     public GameObject Toast;
+    private Vector3 ToastStartPos;
     public bool toastUp = false;
     public float ToastYOffset;
     
@@ -140,6 +141,7 @@ public class GameManager : MonoBehaviour
         ConnectionsRequired = new Connections[connectionsrequired.Length / 2];
         initializeArray();
         tries = 0;
+        ToastStartPos = Toast.transform.position;
 
         //StartCoroutine(spawnText());
     }
@@ -158,7 +160,7 @@ public class GameManager : MonoBehaviour
 
         if (toastUp == true)
         {
-            Toast.transform.position = new Vector3(Toast.transform.position.x, ToastYOffset, Toast.transform.position.z);
+            Toast.transform.position = new Vector3(Toast.transform.position.x, ToastStartPos.y + 0.25f, Toast.transform.position.z);
         }
 
         Debug.Log(tries);

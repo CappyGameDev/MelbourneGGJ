@@ -13,6 +13,7 @@ public class LightingBehaviour : MonoBehaviour
     void Awake()
     {
         flashLight = GetComponent<Light>();
+        if(switchLight != null)
         switchLight.GetComponent<Light>().enabled = false;
     }
 
@@ -20,7 +21,9 @@ public class LightingBehaviour : MonoBehaviour
     void Start()
     {
         StartCoroutine(flash());
-        switchLight.enabled = false;
+
+        if (switchLight != null)
+            switchLight.enabled = false;
     }
 
     // Update is called once per frame
@@ -31,7 +34,9 @@ public class LightingBehaviour : MonoBehaviour
         {
             flashing = false;
             flashLight.enabled = true;
-            switchLight.enabled = true;
+
+            if (switchLight != null)
+                switchLight.enabled = true;
         }
     }
 
