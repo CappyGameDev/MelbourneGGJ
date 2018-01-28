@@ -181,7 +181,6 @@
     <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\3rdPartyAssets\Volumetric Lights\Scripts\VolumetricLight.cs" />
     <Compile Include="Assets\3rdPartyAssets\Volumetric Lights\Scripts\VolumetricLightRenderer.cs" />
-    <Compile Include="Assets\RandomRotator.cs" />
     <Compile Include="Assets\Scripts\Holes\Holes.cs" />
     <Compile Include="Assets\Scripts\LightingBehaviour.cs" />
     <Compile Include="Assets\Scripts\Managers\DontDestroy.cs" />
@@ -191,6 +190,7 @@
     <Compile Include="Assets\Scripts\Plugs\LineRenderManager.cs" />
     <Compile Include="Assets\Scripts\Plugs\PlugLineRendererManager.cs" />
     <Compile Include="Assets\Scripts\Plugs\PlugMovement.cs" />
+    <Compile Include="Assets\Scripts\RandomRotator.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Scripts\UI\TextScript.cs" />
   </ItemGroup>
@@ -454,7 +454,6 @@
     <None Include="Assets\Shaders\moving_grass.shader" />
     <None Include="Assets\Shaders\potato visor.shader" />
     <None Include="Assets\Shaders\potato.shader" />
-    <None Include="Assets\Sounds\DELETE ME.txt" />
     <None Include="Assets\Sprites\DELETE ME.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

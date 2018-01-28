@@ -440,7 +440,6 @@
     <None Include="Assets\Shaders\moving_grass.shader" />
     <None Include="Assets\Shaders\potato visor.shader" />
     <None Include="Assets\Shaders\potato.shader" />
-    <None Include="Assets\Sounds\DELETE ME.txt" />
     <None Include="Assets\Sprites\DELETE ME.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
