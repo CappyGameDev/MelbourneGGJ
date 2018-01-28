@@ -76,6 +76,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - _gloss: 0.1
+    - _node_8451: 0
+    - _op: 0
+    - _opswitch: 0
     - _spec: 0
     - _textureorcolour: 0
     m_Colors:

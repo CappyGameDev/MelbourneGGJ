@@ -181,6 +181,7 @@
     <Compile Include="Assets\3rdPartyAssets\Standard Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\3rdPartyAssets\Volumetric Lights\Scripts\VolumetricLight.cs" />
     <Compile Include="Assets\3rdPartyAssets\Volumetric Lights\Scripts\VolumetricLightRenderer.cs" />
+    <Compile Include="Assets\CameraMouseRotator.cs" />
     <Compile Include="Assets\Scripts\Holes\Holes.cs" />
     <Compile Include="Assets\Scripts\LightingBehaviour.cs" />
     <Compile Include="Assets\Scripts\Managers\DontDestroy.cs" />
