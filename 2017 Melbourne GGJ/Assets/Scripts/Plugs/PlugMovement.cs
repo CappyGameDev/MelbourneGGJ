@@ -24,7 +24,6 @@ public class PlugMovement : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("Manager") != null)
             gm = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
         canvas = GameObject.FindGameObjectWithTag("Canvas");
-        somethingText = canvas.GetComponentInChildren<Text>();
     }
 
     // Use this for initialization

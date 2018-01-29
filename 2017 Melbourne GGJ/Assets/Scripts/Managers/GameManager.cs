@@ -37,6 +37,10 @@ public class GameManager : MonoBehaviour
             {
                 return true;
             }
+            if (ConnectionOne == o.ConnectionTwo && ConnectionTwo == o.ConnectionOne)
+            {
+                return true;
+            }
             else return false;
         }
 
@@ -134,6 +138,8 @@ public class GameManager : MonoBehaviour
     [Header("Animations")]
     public GameObject[] Animations;
 
+    private bool loadNextScene;
+
     void Awake()
     {
         Canvas = GameObject.FindGameObjectWithTag("Canvas");
@@ -150,6 +156,7 @@ public class GameManager : MonoBehaviour
         initializeCombosArray();
         tries = 0;
         ToastStartPos = Toast.transform.position;
+        loadNextScene = false;
 
         //StartCoroutine(spawnText());
     }
@@ -176,12 +183,16 @@ public class GameManager : MonoBehaviour
                                 Debug.Log("Matched anim");
                                 for (int k = 0; k < Animations.Length; k++)
                                 {
-                                    if (!Animations[k].activeSelf)
+                                    if (Animations[k] != null)
                                     {
-                                        Animations[k].SetActive(true);
-                                        specialFeatures[j].ConnectionOne = "";
-                                        specialFeatures[j].ConnectionTwo = "";
-                                        break;
+                                        if (!Animations[k].activeSelf)
+                                        {
+                                            Animations[k].SetActive(true);
+                                            specialFeatures[j].ConnectionOne = "";
+                                            specialFeatures[j].ConnectionTwo = "";
+                                            break;
+                                        }
+
                                     }
 
                                 }
@@ -194,6 +205,11 @@ public class GameManager : MonoBehaviour
             }
         }
 
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
 
         //end animations player
 
@@ -209,7 +225,7 @@ public class GameManager : MonoBehaviour
 
         if (toastUp == true)
         {
-            Toast.transform.position = new Vector3(Toast.transform.position.x, ToastStartPos.y + 0.25f, Toast.transform.position.z);
+            Toast.transform.position = new Vector3(Toast.transform.position.x, ToastStartPos.y + 0.35f, Toast.transform.position.z);
         }
 
         Debug.Log(tries);
@@ -225,9 +241,12 @@ public class GameManager : MonoBehaviour
                         if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
                             || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
                         {
-                            SceneManager.LoadSceneAsync("(1) Charlie");
+                            if (!loadNextScene)
+                            {
+                                SceneManager.LoadSceneAsync("(1) Charlie");
+                                loadNextScene = true;
+                            }
                         }
-
                     }
                 }
                 break;
@@ -240,7 +259,11 @@ public class GameManager : MonoBehaviour
                         if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
                             || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
                         {
-                            SceneManager.LoadSceneAsync("(2) Jess");
+                            if (!loadNextScene)
+                            {
+                                SceneManager.LoadSceneAsync("(2) Jess");
+                                loadNextScene = true;
+                            }
                         }
 
                     }
@@ -255,13 +278,17 @@ public class GameManager : MonoBehaviour
                         if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
                             || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
                         {
-                            SceneManager.LoadSceneAsync("(3) John V2");
+                            if (!loadNextScene)
+                            {
+                                SceneManager.LoadSceneAsync("(3) John V2");
+                                loadNextScene = true;
+                            }
                         }
 
                     }
                 }
                 break;
-            case "(3) John":
+            case "(3) John V2":
                 SceneChange = new Connections(SceneLoad[0], SceneLoad[1]);
                 for (int i = 0; i < inGameConnections.Length; i++)
                 {
@@ -270,7 +297,11 @@ public class GameManager : MonoBehaviour
                         if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
                             || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
                         {
-                            SceneManager.LoadSceneAsync("(4) Bruno");
+                            if (!loadNextScene)
+                            {
+                                SceneManager.LoadSceneAsync("(4) Bruno");
+                                loadNextScene = true;
+                            }
                         }
 
                     }
@@ -285,7 +316,12 @@ public class GameManager : MonoBehaviour
                         if ((inGameConnections[i].ConnectionOne == SceneChange.ConnectionOne && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionTwo)
                             || (inGameConnections[i].ConnectionOne == SceneChange.ConnectionTwo && inGameConnections[i].ConnectionTwo == SceneChange.ConnectionOne))
                         {
-                            SceneManager.LoadSceneAsync("Start");
+                            if (!loadNextScene)
+                            {
+
+                                SceneManager.LoadSceneAsync("Start");
+                                loadNextScene = true;
+                            }
                         }
 
                     }
